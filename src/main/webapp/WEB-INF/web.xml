@@ -4,7 +4,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-
+    <resource-ref>
+        <res-ref-name>jdbc/study</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
 
     <!--Index servlet-->
     <servlet>
@@ -28,14 +32,15 @@
         <url-pattern>/add</url-pattern>
     </servlet-mapping>
 
+    <!--Courses list servlet-->
     <servlet>
-        <servlet-name>main</servlet-name>
-        <servlet-class>servlets.Main</servlet-class>
+        <servlet-name>coursesList</servlet-name>
+        <servlet-class>servlets.CoursesServlet</servlet-class>
     </servlet>
     
     <servlet-mapping>
-        <servlet-name>main</servlet-name>
-        <url-pattern>/main</url-pattern>
+        <servlet-name>coursesList</servlet-name>
+        <url-pattern>/coursesList</url-pattern>
     </servlet-mapping>
 
 

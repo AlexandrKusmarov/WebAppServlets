@@ -15,7 +15,7 @@
     </div>
 
     <div>
-        <button><a href="../main">Main</a></button>
+        <button><a href="../coursesList">Main</a></button>
     </div>
 </div>
 </body>

@@ -9,8 +9,25 @@ public class Courses {
     private String nameOfCourses;
     private Date startOfCourses;
     private Date endOfCourses;
+    private Integer price;
 
     public Courses() {
+    }
+
+    public Courses(String theme, String nameOfCourses, Date startOfCourses, Date endOfCourses, Integer price) {
+        this.theme = theme;
+        this.nameOfCourses = nameOfCourses;
+        this.startOfCourses = startOfCourses;
+        this.endOfCourses = endOfCourses;
+        this.price = price;
+    }
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
     }
 
     public Long getIdCourses() {
