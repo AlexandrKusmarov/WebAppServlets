@@ -13,6 +13,10 @@
     <div>    <!-- buttons holder -->
         <button onclick="location.href='/add'">Add user</button>
     </div>
+
+    <div>
+        <button><a href="../main">Main</a></button>
+    </div>
 </div>
 </body>
 </html>

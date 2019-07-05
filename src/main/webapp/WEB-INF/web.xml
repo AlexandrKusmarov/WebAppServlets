@@ -28,6 +28,15 @@
         <url-pattern>/add</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>main</servlet-name>
+        <servlet-class>servlets.Main</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>main</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>
