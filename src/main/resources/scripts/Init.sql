@@ -1,4 +1,5 @@
 create database if not exists study;
+use study;
 
 create table if not exists courses (
   idCourses      int(8)       not null auto_increment primary key,

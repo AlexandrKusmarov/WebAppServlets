@@ -4,18 +4,17 @@
     <title>index</title>
 </head>
 <body>
-<!-- header -->
 <div>
-    <h1>Super app!</h1>
+    <h1>Please, sign in or create a new account!</h1>
 </div>
 
-<div>       <!-- content -->
-    <div>    <!-- buttons holder -->
-        <button onclick="location.href='/add'">Add user</button>
+<div>
+    <div>
+        <button onclick="location.href='/registration'">Registration</button>
     </div>
 
     <div>
-        <button><a href="../coursesList">Main</a></button>
+        <button onclick="location.href='../login'">Sign in</button>
     </div>
 </div>
 </body>

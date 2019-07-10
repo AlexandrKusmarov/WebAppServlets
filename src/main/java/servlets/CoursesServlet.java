@@ -16,8 +16,7 @@ public class CoursesServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-//        req.getRequestDispatcher("WEB-INF/view/coursesList.jsp").forward(req, resp);
-                String action = req.getServletPath();
+        String action = req.getServletPath();
         System.out.println(action);
         try{
             switch (action) {

@@ -20,14 +20,20 @@ public class User {
     }
 
     //Constructor for Students
-    public User(Long idUser, String login, String password, String email, Role role, Integer mark, Set<Courses> coursesSet) {
-        this.idUser = idUser;
+    public User(String login, String password, String email, Integer mark, Set<Courses> coursesSet) {
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.mark = mark;
+        this.coursesSet = coursesSet;
+    }
+
+    //Constructor for registration
+    public User(String login, String password, String email, Role role) {
         this.login = login;
         this.password = password;
         this.email = email;
         this.role = role;
-        this.mark = mark;
-        this.coursesSet = coursesSet;
     }
 
     //Constructor for Teachers
