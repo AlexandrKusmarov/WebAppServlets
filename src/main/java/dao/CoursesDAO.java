@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface CoursesDAO {
     List<Courses> listAllCourses() throws SQLException;
-    boolean createUser(User user) throws SQLException;
-    boolean findUser (String login, String password) throws SQLException;
+    boolean insertNewUser(User user) throws SQLException;
+    boolean findUserByLogAndPswd(String login, String password) throws SQLException;
 }

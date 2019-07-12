@@ -1,0 +1,68 @@
+2019-07-11 19:22:05 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:22:05 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:22:06 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:24:23 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:24:23 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:24:24 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:24:41 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:24:50 INFO  UserServlet:73 - 
+2019-07-11 19:25:50 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:25:50 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:25:50 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:26:00 INFO  UserServlet:73 - SQLException()!!!
+2019-07-11 19:27:36 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:27:36 INFO  UserServlet:49 - Start page:action=/
+2019-07-11 19:27:36 INFO  UserServlet:49 - Start page:action=/
+2019-07-12 12:17:52 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:17:52 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:17:52 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:18:38 INFO  UserServlet:25 - Method doPOST, ACTION: /registration
+2019-07-12 12:18:38 INFO  UserServlet:65 - Method insertUser: reqorg.apache.catalina.connector.RequestFacade@22b7908e resporg.apache.catalina.connector.ResponseFacade@4167a036 
+2019-07-12 12:18:38 INFO  UserServlet:78 - SQLException()!!!
+2019-07-12 12:20:57 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:20:57 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:20:58 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:21:06 INFO  UserServlet:25 - Method doPOST, ACTION: /registration
+2019-07-12 12:21:06 INFO  UserServlet:80 - SQLException()!!!
+2019-07-12 12:22:03 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:22:03 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:22:03 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:22:11 INFO  UserServlet:25 - Method doPOST, ACTION: /registration
+2019-07-12 12:22:11 DEBUG UserServlet:72 - Method insertUser: loginv2 passwordv2 emailv2@v2 
+2019-07-12 12:22:11 INFO  UserServlet:80 - SQLException()!!!
+2019-07-12 12:23:08 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:23:08 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:23:08 WARN  UserServlet:52 - Opened start page. action: /
+2019-07-12 12:23:17 INFO  UserServlet:25 - Method doPOST, ACTION: /registration
+2019-07-12 12:23:17 DEBUG UserServlet:72 - Method insertUser: login: v4 password: v4 email: v4@v4 
+2019-07-12 12:23:17 INFO  UserServlet:80 - SQLException()!!!
+2019-07-12 12:48:34 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:48:34 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:48:34 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:48:43 INFO  UserServlet:41 - Enter method doGet, ACTION: /afgdf/sd
+2019-07-12 12:52:14 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:52:14 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:52:15 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:52:20 INFO  UserServlet:41 - Enter method doGet, ACTION: /gt
+2019-07-12 12:54:56 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:54:57 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:54:57 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:55:03 INFO  UserServlet:41 - Enter method doGet, ACTION: /a
+2019-07-12 12:55:43 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:55:44 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:55:44 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:55:48 INFO  UserServlet:41 - Enter method doGet, ACTION: /g
+2019-07-12 12:57:00 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:58:01 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:58:50 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:58:50 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:58:51 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 12:59:04 INFO  UserServlet:41 - Enter method doGet, ACTION: /fgfg/fg
+2019-07-12 13:00:39 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 13:00:40 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 13:00:40 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 13:01:52 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 13:01:53 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 13:01:53 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-12 13:01:58 INFO  UserServlet:41 - Enter method doGet, ACTION: /df
+2019-07-12 13:02:15 INFO  UserServlet:41 - Enter method doGet, ACTION: /uydsfog

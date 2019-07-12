@@ -16,11 +16,11 @@ public class CoursesServiceImpl implements CoursesService {
 
     @Override
     public boolean createUser(User user) throws SQLException {
-        return new CoursesDAOimpl().createUser(user);
+        return new CoursesDAOimpl().insertNewUser(user);
     }
 
     @Override
-    public boolean findUser(String login, String password) throws SQLException {
-        return new CoursesDAOimpl().findUser(login,password);
+    public boolean findUserByLogAndPswd(String login, String password) {
+        return new CoursesDAOimpl().findUserByLogAndPswd(login,password);
     }
 }

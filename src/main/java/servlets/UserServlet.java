@@ -2,6 +2,8 @@ package servlets;
 
 import model.Role;
 import model.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import service.impl.CoursesServiceImpl;
 
 import javax.servlet.ServletException;
@@ -12,64 +14,81 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class UserServlet extends HttpServlet {
+
+    private static Logger logger = LoggerFactory.getLogger(UserServlet.class);
+    private CoursesServiceImpl coursesService = new CoursesServiceImpl();
+
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
+
         String action = request.getServletPath();
-        System.out.println("doPOST " + action);
+        logger.info("Enter method doPost, ACTION: {}", action);
 
         switch (action) {
-            case "/registration" :
-                try {
-                    insertUser(request,response);
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
+            case "/registration":
+                insertUser(request, response);
                 break;
-            case "/login" :
-                try {
-                    loginUser(request,response);
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
+            case "/login":
+                checkUserByLogAndPswd(request, response);
                 break;
         }
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws  ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         String action = request.getServletPath();
-        System.out.println("doGET " + action);
+        logger.info("Enter method doGet, ACTION: {}", action);
+
         switch (action) {
-            case "/registration" :
-                    request.getRequestDispatcher("WEB-INF/view/registration.jsp").forward(request, response);
+            case "/":
+                request.getRequestDispatcher("startPage.jsp").forward(request, response);
                 break;
-            case "/login" :
-                    request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
+            case "/registration":
+                request.getRequestDispatcher("WEB-INF/view/registration.jsp").forward(request, response);
                 break;
+            case "/login":
+                request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
+                break;
+            default:
+                response.sendRedirect("error");
         }
     }
 
-    private void insertUser(HttpServletRequest request, HttpServletResponse response)
-            throws SQLException, IOException {
+    private void insertUser(HttpServletRequest request, HttpServletResponse response) {
 
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         String email = request.getParameter("email");
-        User user = new User(login,password,email, Role.STUDENT);
+        User user = new User(login, password, email, Role.STUDENT);
+        logger.debug("Enter method insertUser: login:{}  email:{} ", login, email);
 
-        if(new CoursesServiceImpl().createUser(user))
-            response.sendRedirect("login");
-
+        try {
+            if (coursesService.createUser(user)) {
+                response.sendRedirect("login");
+            }
+        } catch (SQLException e) {
+            logger.error(e.getMessage(), e);
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
     }
 
-    private void loginUser (HttpServletRequest request, HttpServletResponse response)
-            throws SQLException, IOException {
+    private void checkUserByLogAndPswd(HttpServletRequest request, HttpServletResponse response) {
 
         String login = request.getParameter("login");
         String password = request.getParameter("password");
+        logger.debug("Method checkUserByLogAndPswd: login:{} ", login);
 
-        if(new CoursesServiceImpl().findUser(login,password))
-            response.sendRedirect("coursesList");
-        else response.sendRedirect("login");
+        try {
+            if (coursesService.findUserByLogAndPswd(login, password))
+                response.sendRedirect("coursesList");
+            else response.sendRedirect("login");
+        } catch (IOException e) {
+            logger.error(e.getMessage(), e);
+            e.printStackTrace();
+        }
     }
 }

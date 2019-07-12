@@ -4,9 +4,10 @@ import dao.CoursesDAO;
 import model.Courses;
 import model.Role;
 import model.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import util.DBUtil;
 
-import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -14,11 +15,14 @@ import java.util.List;
 
 public class CoursesDAOimpl implements CoursesDAO {
 
+    private static Logger logger = LoggerFactory.getLogger(CoursesDAOimpl.class);
+
     @Override
-    public List<Courses> listAllCourses() throws SQLException {
+    public List<Courses> listAllCourses() {
+
+        logger.info("Enter method listAllCourses");
 
         List<Courses> coursesList = new ArrayList<>();
-
         String sql = "SELECT * FROM courses";
 
         try (Connection connection = DBUtil.getDataSource().getConnection();
@@ -36,14 +40,17 @@ public class CoursesDAOimpl implements CoursesDAO {
                 Courses cours = new Courses(theme, nameOfCourses, startOfCourses, endOfCourses, price);
                 coursesList.add(cours);
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
+            logger.error(e.getMessage(), e);
         }
         return coursesList;
     }
 
     @Override
-    public boolean createUser(User user) throws SQLException {
+    public boolean insertNewUser(User user) {
+
+        logger.info("Enter method insertNewUser");
         String sql = "INSERT INTO usr (login, password, email, userRole) VALUES (?, ?, ?, ?)";
         boolean rowInserted = false;
 
@@ -57,34 +64,34 @@ public class CoursesDAOimpl implements CoursesDAO {
 
             rowInserted = ps.executeUpdate() > 0;
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
+            logger.error(e.getMessage(), e);
         }
         return rowInserted;
     }
 
-    public boolean findUser(String login, String password) throws SQLException {
+    public boolean findUserByLogAndPswd(String login, String password) {
 
+        logger.info("Enter method findUserByLogAndPswd");
         String sql = "SELECT * FROM usr where login = ? AND password = ?";
-        boolean isPresent = false;
 
+        boolean isFind = false;
         try (Connection connection = DBUtil.getDataSource().getConnection();
              PreparedStatement ps = connection.prepareStatement(sql)) {
 
-             ps.setString(1,login);
-             ps.setString(2, password);
-             ResultSet resultSet = ps.executeQuery();
+            ps.setString(1, login);
+            ps.setString(2, password);
+            ResultSet resultSet = ps.executeQuery();
 
-                if(resultSet.next()) {
-                    String loginTab = resultSet.getString("login");
-                    System.out.println("findUser: " + loginTab);
-                    String passwordTab = resultSet.getString("password");
-                    System.out.println("findUser: " + passwordTab);
-                    if (loginTab.equals(login) && passwordTab.equals(password)) {
-                        isPresent = true;
-                    }
-                }
+            if(resultSet.next()){
+                isFind = true;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
         }
-        return isPresent;
+        return isFind;
     }
 }
