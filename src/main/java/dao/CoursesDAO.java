@@ -9,5 +9,6 @@ import java.util.List;
 public interface CoursesDAO {
     List<Courses> listAllCourses() throws SQLException;
     boolean insertNewUser(User user) throws SQLException;
-    boolean findUserByLogAndPswd(String login, String password) throws SQLException;
+    boolean findUserByLoginAndPswd(String login, String password) throws SQLException;
+    boolean findUserByLogin(String login) throws SQLException;
 }

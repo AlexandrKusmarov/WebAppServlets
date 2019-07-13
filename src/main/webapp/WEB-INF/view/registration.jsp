@@ -3,17 +3,21 @@
 <form action="registration" method="post">
     <div class="form-group">
         <label for="login">Login</label>
-        <input type="text" class="form-control" id="login" name="login" placeholder="Enter login">
+        <input type="text" class="form-control" id="login" name="login" required placeholder="Enter login">
     </div>
     <div class="form-group">
         <label for="email">Email address</label>
-        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="email" class="form-control" name="email" id="email" required aria-describedby="emailHelp" placeholder="Enter email">
     </div>
     <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
+        <input type="password" class="form-control" name="password" required id="password" placeholder="Enter password">
     </div>
 
+    <div>
+        <span style="color: maroon">${error}</span>
+    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+
 </form>
 </html>

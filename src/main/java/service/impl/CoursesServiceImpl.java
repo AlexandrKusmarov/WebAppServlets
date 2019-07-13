@@ -9,18 +9,26 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class CoursesServiceImpl implements CoursesService {
+
+    private CoursesDAOimpl coursesDAOimpl = new CoursesDAOimpl();
+
     @Override
-    public List<Courses> getAllCourses() throws SQLException {
-        return new CoursesDAOimpl().listAllCourses();
+    public List<Courses> getAllCourses() {
+        return coursesDAOimpl.listAllCourses();
     }
 
     @Override
-    public boolean createUser(User user) throws SQLException {
-        return new CoursesDAOimpl().insertNewUser(user);
+    public boolean createUser(User user) {
+        return coursesDAOimpl.insertNewUser(user);
     }
 
     @Override
-    public boolean findUserByLogAndPswd(String login, String password) {
-        return new CoursesDAOimpl().findUserByLogAndPswd(login,password);
+    public boolean findUserByLoginAndPswd(String login, String password) {
+        return coursesDAOimpl.findUserByLoginAndPswd(login, password);
+    }
+
+    @Override
+    public boolean findUserByLogin(String login) {
+        return coursesDAOimpl.findUserByLogin(login);
     }
 }

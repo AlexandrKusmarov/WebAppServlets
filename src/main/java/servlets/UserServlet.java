@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.SQLException;
 
 public class UserServlet extends HttpServlet {
 
@@ -29,7 +28,7 @@ public class UserServlet extends HttpServlet {
                 insertUser(request, response);
                 break;
             case "/login":
-                checkUserByLogAndPswd(request, response);
+                checkUserByLoginAndPswd(request, response);
                 break;
         }
     }
@@ -60,35 +59,49 @@ public class UserServlet extends HttpServlet {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         String email = request.getParameter("email");
-        User user = new User(login, password, email, Role.STUDENT);
-        logger.debug("Enter method insertUser: login:{}  email:{} ", login, email);
 
-        try {
-            if (coursesService.createUser(user)) {
-                response.sendRedirect("login");
+        if(!coursesService.findUserByLogin(login)) {
+
+            User user = new User(login, password, email, Role.STUDENT);
+            logger.debug("Enter method insertUser: login:{}  email:{} ", login, email);
+
+            try {
+                if (coursesService.createUser(user)) {
+                    response.sendRedirect("login");
+                    request.setAttribute("error","");
+                }
+                else {
+                    response.sendRedirect("registration");
+                    request.setAttribute("error","Registration data is incorrect!");
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+                logger.error(e.getMessage(), e);
             }
-        } catch (SQLException e) {
-            logger.error(e.getMessage(), e);
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-            logger.error(e.getMessage(), e);
         }
     }
 
-    private void checkUserByLogAndPswd(HttpServletRequest request, HttpServletResponse response) {
+    private void checkUserByLoginAndPswd(HttpServletRequest request, HttpServletResponse response) {
 
         String login = request.getParameter("login");
         String password = request.getParameter("password");
-        logger.debug("Method checkUserByLogAndPswd: login:{} ", login);
+        logger.debug("Method checkUserByLogin: login:{} ", login);
 
         try {
-            if (coursesService.findUserByLogAndPswd(login, password))
+            if (coursesService.findUserByLoginAndPswd(login, password)) {
                 response.sendRedirect("coursesList");
-            else response.sendRedirect("login");
+                request.setAttribute("error", "");
+            }
+            else {
+                request.setAttribute("error","Registration data is incorrect!");
+                request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
+            }
         } catch (IOException e) {
             logger.error(e.getMessage(), e);
             e.printStackTrace();
+        } catch (ServletException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
         }
     }
 }

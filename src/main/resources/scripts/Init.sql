@@ -1,8 +1,14 @@
 create database if not exists study;
-use study;
+
+# SET FOREIGN_KEY_CHECKS=0;
+drop table if exists courses;
+drop table if exists usr;
+drop table if exists journal;
+drop table if exists role;
+# SET FOREIGN_KEY_CHECKS=1;
 
 create table if not exists courses (
-  idCourses      int(8)       not null auto_increment primary key,
+  idCourses int(8) not null auto_increment primary key,
   theme          varchar(255) not null,
   nameOfCourses  varchar(255) not null,
   startOfCourses date         not null,
@@ -52,8 +58,3 @@ foreign key (studentId) references usr (idUser);
 alter table role
   add constraint role_user_fk
 foreign key (userId) references usr (idUser);
-
-
-
-
-
