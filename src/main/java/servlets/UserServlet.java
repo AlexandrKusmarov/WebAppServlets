@@ -10,6 +10,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class UserServlet extends HttpServlet {
@@ -22,13 +23,15 @@ public class UserServlet extends HttpServlet {
 
         String action = request.getServletPath();
         logger.info("Enter method doPost, ACTION: {}", action);
-
         switch (action) {
             case "/registration":
                 insertUser(request, response);
                 break;
             case "/login":
                 checkUserByLoginAndPswd(request, response);
+                break;
+            case "/logout":
+                logout(request,response);
                 break;
         }
     }
@@ -49,8 +52,22 @@ public class UserServlet extends HttpServlet {
             case "/login":
                 request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
                 break;
+            case "/logout":
+                request.getRequestDispatcher("WEB-INF/view/logout.jsp").forward(request, response);
+                break;
             default:
                 response.sendRedirect("error");
+        }
+    }
+
+    private void logout(HttpServletRequest request, HttpServletResponse response) {
+        logger.info("Enter method logout()");
+        try {
+            response.sendRedirect("logout");
+            logger.info("Redirect to logout.jsp. Close session, redirect to login.jsp");
+        } catch (IOException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
         }
     }
 
@@ -89,6 +106,11 @@ public class UserServlet extends HttpServlet {
 
         try {
             if (coursesService.findUserByLoginAndPswd(login, password)) {
+
+                HttpSession session = request.getSession(true);
+                session.setAttribute("userName", login);
+                logger.info("Opened session, logged In.");
+
                 response.sendRedirect("coursesList");
                 request.setAttribute("error", "");
             }

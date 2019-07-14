@@ -14,6 +14,17 @@
         <th>End date</th>
         <th>Price</th>
     </tr>
+    <div style="text-align: right">
+        <div>
+            <%=session.getAttribute("userName")%>
+        </div>
+        <div>
+            <form method="post" action="logout">
+                <button type="submit" name="logout" id="logoutid">Logout</button>
+            </form>
+        </div>
+    </div>
+
     </thead>
     <tbody>
     <c:forEach var="course" items="${coursesList}">
@@ -28,3 +39,4 @@
     </tbody>
 </table>
 </html>
+

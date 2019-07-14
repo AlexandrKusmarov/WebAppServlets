@@ -442,3 +442,277 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Dupl
 	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
 2019-07-13 18:34:19 INFO  CoursesDAOimpl:53 - Enter method insertNewUser
 2019-07-13 18:35:29 INFO  CoursesDAOimpl:103 - Enter method findUserByLogin
+2019-07-13 22:08:54 INFO  CoursesDAOimpl:103 - Enter method findUserByLogin
+2019-07-13 22:09:07 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:09:08 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:09:09 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:09:11 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:09:17 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:09:17 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:09:17 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:09:17 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:09:50 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:09:51 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:09:51 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:09:56 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:10:01 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:10:01 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:10:01 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:10:01 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:16:33 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:16:33 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:16:35 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:16:35 INFO  UserServlet:40 - Enter method doGet, ACTION: /favicon.ico
+2019-07-13 22:16:36 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:16:37 INFO  UserServlet:40 - Enter method doGet, ACTION: /favicon.ico
+2019-07-13 22:16:41 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:16:41 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:16:41 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:16:42 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:17:12 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:17:13 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:17:14 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:17:15 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:17:20 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:17:20 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:17:20 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:17:20 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:19:16 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:19:16 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:19:17 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:19:18 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:19:23 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:19:23 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:19:23 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:19:23 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:20:24 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:20:25 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:20:25 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:20:27 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:20:31 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:20:31 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:20:31 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:20:31 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:21:39 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:21:42 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:21:57 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:21:58 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:21:58 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:21:59 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:22:03 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:22:03 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:22:03 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:22:03 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:23:30 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:23:31 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:23:32 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:23:34 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:23:38 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:23:38 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:23:38 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:23:38 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:25:05 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:25:05 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:25:05 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:25:07 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:25:10 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:25:10 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:25:10 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:25:10 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:25:54 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:25:55 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:25:55 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:25:56 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:26:01 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:26:01 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:26:01 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:26:01 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:27:10 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:27:11 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:27:11 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:27:13 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:27:17 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:27:17 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:27:17 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:27:18 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:29:05 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:29:06 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:29:06 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:29:07 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:29:12 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:29:12 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:29:12 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:29:12 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:31:12 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:31:13 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:31:13 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:31:18 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:31:25 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:31:25 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:31:25 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:31:26 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:32:07 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:32:08 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:32:08 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:32:09 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:32:14 INFO  UserServlet:24 - Enter method doPost, ACTION: /login
+2019-07-13 22:32:14 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:32:14 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:32:14 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:36:47 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:36:48 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:36:49 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:36:50 INFO  UserServlet:41 - Enter method doGet, ACTION: /login
+2019-07-13 22:36:55 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-13 22:36:55 DEBUG UserServlet:89 - Method checkUserByLogin: login:admin 
+2019-07-13 22:36:55 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:36:55 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:39:32 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:39:33 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:39:34 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:39:35 INFO  UserServlet:41 - Enter method doGet, ACTION: /login
+2019-07-13 22:39:39 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-13 22:39:39 DEBUG UserServlet:89 - Method checkUserByLogin: login:admin 
+2019-07-13 22:39:39 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:39:39 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:40:20 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:40:20 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:40:21 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:40:22 INFO  UserServlet:41 - Enter method doGet, ACTION: /login
+2019-07-13 22:40:32 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-13 22:40:32 DEBUG UserServlet:89 - Method checkUserByLogin: login:admin 
+2019-07-13 22:40:32 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:40:32 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:40:54 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:40:55 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:40:55 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:40:56 INFO  UserServlet:41 - Enter method doGet, ACTION: /login
+2019-07-13 22:41:01 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-13 22:41:01 DEBUG UserServlet:89 - Method checkUserByLogin: login:admin 
+2019-07-13 22:41:01 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:41:01 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:42:44 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:42:44 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:42:45 INFO  UserServlet:41 - Enter method doGet, ACTION: /
+2019-07-13 22:42:46 INFO  UserServlet:41 - Enter method doGet, ACTION: /login
+2019-07-13 22:42:54 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-13 22:42:54 DEBUG UserServlet:89 - Method checkUserByLogin: login:admin 
+2019-07-13 22:42:54 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:42:54 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-13 22:49:15 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:49:16 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:49:16 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-13 22:49:18 INFO  UserServlet:40 - Enter method doGet, ACTION: /login
+2019-07-13 22:49:24 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-13 22:49:24 DEBUG UserServlet:88 - Method checkUserByLogin: login:admin 
+2019-07-13 22:49:24 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-13 22:49:24 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-14 10:02:16 INFO  UserServlet:40 - Enter method doGet, ACTION: /
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-14 10:02:20 INFO  UserServlet:40 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-14 10:42:11 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:42:11 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:42:11 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:42:13 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 10:42:18 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-14 10:42:18 DEBUG UserServlet:101 - Method checkUserByLogin: login:admin 
+2019-07-14 10:42:18 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-14 10:42:18 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-14 10:42:25 INFO  UserServlet:25 - Enter method doPost, ACTION: /logout
+2019-07-14 10:43:51 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:43:51 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:43:51 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:43:53 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 10:43:57 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-14 10:43:57 DEBUG UserServlet:101 - Method checkUserByLogin: login:admin 
+2019-07-14 10:43:57 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-14 10:43:57 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-14 10:44:01 INFO  UserServlet:25 - Enter method doPost, ACTION: /logout
+2019-07-14 10:44:01 INFO  UserServlet:61 - Enter method logout()
+2019-07-14 10:44:01 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/coursesList
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:16 INFO  UserServlet:43 - Enter method doGet, ACTION: /login/error
+2019-07-14 10:44:43 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-14 10:44:54 INFO  UserServlet:25 - Enter method doPost, ACTION: /logout
+2019-07-14 10:44:54 INFO  UserServlet:61 - Enter method logout()
+2019-07-14 10:44:54 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 10:47:18 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:47:19 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:47:19 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:47:20 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 10:47:25 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-14 10:47:25 DEBUG UserServlet:101 - Method checkUserByLogin: login:admin 
+2019-07-14 10:47:25 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-14 10:47:25 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-14 10:47:27 INFO  UserServlet:25 - Enter method doPost, ACTION: /logout
+2019-07-14 10:47:27 INFO  UserServlet:61 - Enter method logout()
+2019-07-14 10:47:27 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 10:51:59 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:52:00 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:52:00 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:52:11 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 10:52:15 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-14 10:52:15 DEBUG UserServlet:102 - Method checkUserByLogin: login:admin 
+2019-07-14 10:52:15 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-14 10:52:15 INFO  UserServlet:109 - Opened session, logged In.
+2019-07-14 10:52:15 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-14 10:52:31 INFO  UserServlet:25 - Enter method doPost, ACTION: /logout
+2019-07-14 10:52:31 INFO  UserServlet:61 - Enter method logout()
+2019-07-14 10:52:31 INFO  UserServlet:64 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-14 10:52:31 INFO  UserServlet:43 - Enter method doGet, ACTION: /logout
+2019-07-14 10:54:37 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:54:37 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:54:38 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 10:54:39 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 10:54:45 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-14 10:54:45 DEBUG UserServlet:105 - Method checkUserByLogin: login:admin 
+2019-07-14 10:54:45 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-14 10:54:45 INFO  UserServlet:112 - Opened session, logged In.
+2019-07-14 10:54:45 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-14 10:54:47 INFO  UserServlet:25 - Enter method doPost, ACTION: /logout
+2019-07-14 10:54:47 INFO  UserServlet:64 - Enter method logout()
+2019-07-14 10:54:47 INFO  UserServlet:67 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-14 10:54:47 INFO  UserServlet:43 - Enter method doGet, ACTION: /logout
+2019-07-14 10:54:47 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 10:55:00 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-14 11:12:35 INFO  UserServlet:43 - Enter method doGet, ACTION: /
+2019-07-14 11:12:40 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 11:12:43 INFO  UserServlet:25 - Enter method doPost, ACTION: /login
+2019-07-14 11:12:43 DEBUG UserServlet:105 - Method checkUserByLogin: login:admin 
+2019-07-14 11:12:43 INFO  CoursesDAOimpl:77 - Enter method findUserByLoginAndPswd
+2019-07-14 11:12:44 INFO  UserServlet:112 - Opened session, logged In.
+2019-07-14 11:12:44 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
+2019-07-14 11:12:48 INFO  UserServlet:25 - Enter method doPost, ACTION: /logout
+2019-07-14 11:12:48 INFO  UserServlet:64 - Enter method logout()
+2019-07-14 11:12:48 INFO  UserServlet:67 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-14 11:12:48 INFO  UserServlet:43 - Enter method doGet, ACTION: /logout
+2019-07-14 11:12:48 INFO  UserServlet:43 - Enter method doGet, ACTION: /login
+2019-07-14 11:12:58 INFO  CoursesDAOimpl:23 - Enter method listAllCourses
