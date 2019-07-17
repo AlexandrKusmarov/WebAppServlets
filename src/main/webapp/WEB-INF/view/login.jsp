@@ -14,6 +14,11 @@
     <div>
         <span style="color: maroon">${error}</span>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <div>
+        <button onclick="location.href='/registration'">Registration</button>
+    </div>
 </form>
 </html>

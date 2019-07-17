@@ -13,8 +13,8 @@ import java.util.stream.Collectors;
 public class DbInit {
     public static void startUp() throws Exception {
 
-        URL urlInitDb = CoursesDAOimplTest.class.getClassLoader().getResource("scripts/Init.sql");
-        URL urlInsertDb = CoursesDAOimplTest.class.getClassLoader().getResource("scripts/Insert.sql");
+        URL urlInitDb = UserDAOimplTest.class.getClassLoader().getResource("scripts/Init.sql");
+        URL urlInsertDb = UserDAOimplTest.class.getClassLoader().getResource("scripts/Insert.sql");
         List<String> strInitDb = Files.readAllLines(Paths.get(urlInitDb.toURI()));
         String sqlInitDb = strInitDb.stream().collect(Collectors.joining());
 

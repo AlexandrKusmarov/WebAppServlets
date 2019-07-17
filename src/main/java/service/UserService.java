@@ -6,7 +6,7 @@ import model.User;
 import java.sql.SQLException;
 import java.util.List;
 
-public interface CoursesService {
+public interface UserService {
 
     List<Courses> getAllCourses() throws SQLException;
     boolean createUser(User user) throws SQLException;

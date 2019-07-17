@@ -4,7 +4,7 @@ import model.Role;
 import model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import service.impl.CoursesServiceImpl;
+import service.impl.UserServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,7 +16,7 @@ import java.io.IOException;
 public class UserServlet extends HttpServlet {
 
     private static Logger logger = LoggerFactory.getLogger(UserServlet.class);
-    private CoursesServiceImpl coursesService = new CoursesServiceImpl();
+    private UserServiceImpl coursesService = new UserServiceImpl();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
@@ -92,6 +92,16 @@ public class UserServlet extends HttpServlet {
                     request.setAttribute("error","Registration data is incorrect!");
                 }
             } catch (IOException e) {
+                e.printStackTrace();
+                logger.error(e.getMessage(), e);
+            }
+        }
+        else {
+            try {
+                request.setAttribute("error", "User with this username already exists!");
+                request.getRequestDispatcher("WEB-INF/view/registration.jsp").forward(request, response);
+
+            } catch (IOException | ServletException e) {
                 e.printStackTrace();
                 logger.error(e.getMessage(), e);
             }

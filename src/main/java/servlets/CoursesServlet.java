@@ -1,7 +1,7 @@
 package servlets;
 
 import model.Courses;
-import service.impl.CoursesServiceImpl;
+import service.impl.UserServiceImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -31,7 +31,7 @@ public class CoursesServlet extends HttpServlet {
 
     private void listCourses (HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
-        List<Courses> coursesList = new CoursesServiceImpl().getAllCourses();
+        List<Courses> coursesList = new UserServiceImpl().getAllCourses();
 
         request.setAttribute("coursesList", coursesList);
         RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/view/coursesList.jsp");

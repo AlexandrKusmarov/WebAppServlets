@@ -1,6 +1,6 @@
 package dao.impl;
 
-import dao.CoursesDAO;
+import dao.UserDAO;
 import model.Courses;
 import model.Role;
 import model.User;
@@ -13,9 +13,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class CoursesDAOimpl implements CoursesDAO {
+public class UserDAOimpl implements UserDAO {
 
-    private static Logger logger = LoggerFactory.getLogger(CoursesDAOimpl.class);
+    private static Logger logger = LoggerFactory.getLogger(UserDAOimpl.class);
 
     @Override
     public List<Courses> listAllCourses() {
