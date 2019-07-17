@@ -2,6 +2,7 @@ package servlets;
 
 import model.Role;
 import model.User;
+import org.apache.catalina.realm.GenericPrincipal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import service.impl.UserServiceImpl;
@@ -12,11 +13,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.security.Principal;
+import java.sql.SQLException;
 
 public class UserServlet extends HttpServlet {
 
     private static Logger logger = LoggerFactory.getLogger(UserServlet.class);
-    private UserServiceImpl coursesService = new UserServiceImpl();
+    private UserServiceImpl userService = new UserServiceImpl();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
@@ -77,13 +80,13 @@ public class UserServlet extends HttpServlet {
         String password = request.getParameter("password");
         String email = request.getParameter("email");
 
-        if(!coursesService.findUserByLogin(login)) {
+        if(!userService.findUserByLogin(login)) {
 
             User user = new User(login, password, email, Role.STUDENT);
             logger.debug("Enter method insertUser: login:{}  email:{} ", login, email);
 
             try {
-                if (coursesService.createUser(user)) {
+                if (userService.createUser(user)) {
                     response.sendRedirect("login");
                     request.setAttribute("error","");
                 }
@@ -110,19 +113,24 @@ public class UserServlet extends HttpServlet {
 
     private void checkUserByLoginAndPswd(HttpServletRequest request, HttpServletResponse response) {
 
+
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         logger.debug("Method checkUserByLogin: login:{} ", login);
 
         try {
-            if (coursesService.findUserByLoginAndPswd(login, password)) {
+            if (userService.findUserByLoginAndPswd(login, password)) {
 
                 HttpSession session = request.getSession(true);
                 session.setAttribute("userName", login);
+                session.setAttribute("role",userService.getCurrentUserRole(login));
                 logger.info("Opened session, logged In.");
+
 
                 response.sendRedirect("coursesList");
                 request.setAttribute("error", "");
+
+
             }
             else {
                 request.setAttribute("error","Registration data is incorrect!");
@@ -131,9 +139,12 @@ public class UserServlet extends HttpServlet {
         } catch (IOException e) {
             logger.error(e.getMessage(), e);
             e.printStackTrace();
-        } catch (ServletException e) {
+        } catch (ServletException | SQLException e) {
             e.printStackTrace();
             logger.error(e.getMessage(), e);
         }
     }
+
+
+
 }

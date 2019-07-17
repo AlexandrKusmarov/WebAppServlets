@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class UserDAOimplTest {
+public class UserDaoimplTest {
 
     @BeforeClass
     public static void startUp() throws Exception {
@@ -18,17 +18,17 @@ public class UserDAOimplTest {
 
     @Test
     public void listAllCourses() {
-        List<Courses> coursesList = new UserDAOimpl().listAllCourses();
+        List<Courses> coursesList = new CoursesDaoImpl().listAllCourses();
         Assert.assertEquals(coursesList.size(),coursesList.size());
     }
 
     @Test
     public void insertNewUser() {
-        new UserDAOimpl().insertNewUser(new User("test","test","test@test", Role.STUDENT));
+        new UserDaoimpl().insertNewUser(new User("test","test","test@test", Role.STUDENT));
     }
 
     @Test
     public void findUserByLog() {
-        new UserDAOimpl().findUserByLogin("test");
+        new UserDaoimpl().findUserByLogin("test");
     }
 }

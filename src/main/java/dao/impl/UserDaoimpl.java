@@ -1,6 +1,6 @@
 package dao.impl;
 
-import dao.UserDAO;
+import dao.UserDao;
 import model.Courses;
 import model.Role;
 import model.User;
@@ -13,39 +13,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class UserDAOimpl implements UserDAO {
+public class UserDaoimpl implements UserDao {
 
-    private static Logger logger = LoggerFactory.getLogger(UserDAOimpl.class);
-
-    @Override
-    public List<Courses> listAllCourses() {
-
-        logger.info("Enter method listAllCourses");
-
-        List<Courses> coursesList = new ArrayList<>();
-        String sql = "SELECT * FROM courses";
-
-             try (Connection connection = ConnectionBuilder.getConnection();
-                  Statement statement = connection.createStatement();
-                  ResultSet resultSet = statement.executeQuery(sql)) {
-
-            while (resultSet.next()) {
-                int idCourses = resultSet.getInt("idCourses");
-                String theme = resultSet.getString("theme");
-                String nameOfCourses = resultSet.getString("nameOfCourses");
-                Date startOfCourses = resultSet.getDate("startOfCourses");
-                Date endOfCourses = resultSet.getDate("endOfCourses");
-                int price = resultSet.getInt("price");
-
-                Courses cours = new Courses(theme, nameOfCourses, startOfCourses, endOfCourses, price);
-                coursesList.add(cours);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-            logger.error(e.getMessage(), e);
-        }
-        return coursesList;
-    }
+    private static Logger logger = LoggerFactory.getLogger(UserDaoimpl.class);
 
     @Override
     public boolean insertNewUser(User user) {
@@ -118,5 +88,29 @@ public class UserDAOimpl implements UserDAO {
             logger.error(e.getMessage(), e);
         }
         return isFind;
+    }
+
+    @Override
+    public Role getCurrentUserRole(String login) throws SQLException {
+
+        String role = "";
+        logger.info("Enter method getCurrentUserRole");
+        String sql = "SELECT userRole FROM usr where login = ?";
+
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+
+            ps.setString(1, login);
+            ResultSet resultSet = ps.executeQuery();
+
+            if(resultSet.next()){
+                role = resultSet.getString("userRole");
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
+        return Role.valueOf(role);
     }
 }

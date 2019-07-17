@@ -1,7 +1,7 @@
 package servlets;
 
 import model.Courses;
-import service.impl.UserServiceImpl;
+import service.impl.CoursesServiceImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,6 +13,9 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class CoursesServlet extends HttpServlet {
+
+    private CoursesServiceImpl coursesService = new CoursesServiceImpl();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -31,11 +34,12 @@ public class CoursesServlet extends HttpServlet {
 
     private void listCourses (HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
-        List<Courses> coursesList = new UserServiceImpl().getAllCourses();
+        List<Courses> coursesList = coursesService.getAllCourses();
 
         request.setAttribute("coursesList", coursesList);
         RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/view/coursesList.jsp");
         dispatcher.forward(request,response);
+
     }
 
 }

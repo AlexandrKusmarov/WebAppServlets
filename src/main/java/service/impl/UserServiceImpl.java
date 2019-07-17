@@ -1,20 +1,15 @@
 package service.impl;
 
-import dao.impl.UserDAOimpl;
-import model.Courses;
+import dao.impl.UserDaoimpl;
+import model.Role;
 import model.User;
 import service.UserService;
 
-import java.util.List;
+import java.sql.SQLException;
 
 public class UserServiceImpl implements UserService {
 
-    private UserDAOimpl userDAOimpl = new UserDAOimpl();
-
-    @Override
-    public List<Courses> getAllCourses() {
-        return userDAOimpl.listAllCourses();
-    }
+    private UserDaoimpl userDAOimpl = new UserDaoimpl();
 
     @Override
     public boolean createUser(User user) {
@@ -29,5 +24,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean findUserByLogin(String login) {
         return userDAOimpl.findUserByLogin(login);
+    }
+
+    @Override
+    public Role getCurrentUserRole(String login) throws SQLException {
+        return userDAOimpl.getCurrentUserRole(login);
     }
 }

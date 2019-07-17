@@ -56,7 +56,7 @@ public class ErrorHandler extends HttpServlet {
             out.println("<li><strong>Exception Message</strong>?= " + throwable.getMessage( ) + "</li></ul>");
         }
 
-        out.println("<div> </div>Click <a id=\"homeUrl\" href=\"index.jsp\">home</a>");
+        out.println("<div> </div>Click <a id=\"homeUrl\" href=\"/\">home</a>");
         out.println("</body>\n</html>");
         out.close();
     }

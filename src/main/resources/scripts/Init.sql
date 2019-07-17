@@ -24,6 +24,7 @@ create table if not exists journal (
 );
 
 create table if not exists role (
+  roleId int(8) not null primary key,
   userId int(8) not null,
   roles  varchar(255)
 );

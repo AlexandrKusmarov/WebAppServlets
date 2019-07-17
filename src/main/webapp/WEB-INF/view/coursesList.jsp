@@ -17,6 +17,7 @@
     <div style="text-align: right">
         <div>
             <%=session.getAttribute("userName")%>
+            <%=session.getAttribute("role")%>
         </div>
         <div>
             <form method="post" action="logout">
