@@ -20,5 +20,8 @@
     <div>
         <button onclick="location.href='/registration'">Registration</button>
     </div>
+    <div>
+        <button onclick="location.href='/coursesList'">Courses</button>
+    </div>
 </form>
 </html>

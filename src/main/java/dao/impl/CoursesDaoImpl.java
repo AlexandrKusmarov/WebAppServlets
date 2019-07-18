@@ -16,7 +16,7 @@ import java.util.List;
 
 public class CoursesDaoImpl implements CoursesDao {
 
-    private static Logger logger = LoggerFactory.getLogger(UserDaoimpl.class);
+    private static Logger logger = LoggerFactory.getLogger(CoursesDaoImpl.class);
 
     @Override
     public List<Courses> listAllCourses() {

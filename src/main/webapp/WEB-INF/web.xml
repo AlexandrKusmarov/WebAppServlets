@@ -10,6 +10,16 @@
         <res-auth>Container</res-auth>
     </resource-ref>
 
+    <!--Filter-->
+    <filter>
+        <filter-name>AuthorizationFilter</filter-name>
+        <filter-class>servlets.filters.AuthorizationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthorizationFilter</filter-name>
+        <url-pattern>/coursesList</url-pattern>
+    </filter-mapping>
+
     <!--Index servlet-->
     <servlet>
         <servlet-name>userServlet</servlet-name>
@@ -29,6 +39,8 @@
         <servlet-name>coursesList</servlet-name>
         <url-pattern>/coursesList</url-pattern>
     </servlet-mapping>
+
+
 
     <!--Exception servlet-->
     <servlet>

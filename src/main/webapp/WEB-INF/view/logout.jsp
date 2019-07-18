@@ -5,7 +5,6 @@
 </head>
 <body>
     <%
-        session.invalidate();
         response.sendRedirect("login");
     %>
 </body>

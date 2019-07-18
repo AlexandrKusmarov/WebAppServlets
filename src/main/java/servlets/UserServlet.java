@@ -2,7 +2,6 @@ package servlets;
 
 import model.Role;
 import model.User;
-import org.apache.catalina.realm.GenericPrincipal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import service.impl.UserServiceImpl;
@@ -13,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.security.Principal;
 import java.sql.SQLException;
 
 public class UserServlet extends HttpServlet {
@@ -54,6 +52,7 @@ public class UserServlet extends HttpServlet {
                 break;
             case "/login":
                 request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
+                request.getSession(false);
                 break;
             case "/logout":
                 request.getRequestDispatcher("WEB-INF/view/logout.jsp").forward(request, response);
@@ -66,7 +65,10 @@ public class UserServlet extends HttpServlet {
     private void logout(HttpServletRequest request, HttpServletResponse response) {
         logger.info("Enter method logout()");
         try {
+            HttpSession session = request.getSession();
+            session.invalidate();
             response.sendRedirect("logout");
+
             logger.info("Redirect to logout.jsp. Close session, redirect to login.jsp");
         } catch (IOException e) {
             e.printStackTrace();
@@ -129,8 +131,6 @@ public class UserServlet extends HttpServlet {
 
                 response.sendRedirect("coursesList");
                 request.setAttribute("error", "");
-
-
             }
             else {
                 request.setAttribute("error","Registration data is incorrect!");
