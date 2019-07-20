@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface CoursesDao {
     List<Courses> listAllCourses() throws SQLException;
+    Courses getCourseById(Long idCourse) throws SQLException;
 }

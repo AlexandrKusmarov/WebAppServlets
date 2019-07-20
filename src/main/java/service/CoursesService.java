@@ -8,4 +8,5 @@ import java.util.List;
 public interface CoursesService {
 
     List<Courses> getAllCourses() throws SQLException;
+    Courses getCourseById(Long idCourse) throws SQLException;
 }

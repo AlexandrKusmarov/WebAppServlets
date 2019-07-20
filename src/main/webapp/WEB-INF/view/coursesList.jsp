@@ -5,6 +5,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <html>
+<jsp:include page="../static/navbar.jsp"/>
 <table class="table">
     <thead>
     <tr>
@@ -30,11 +31,11 @@
     <tbody>
     <c:forEach var="course" items="${coursesList}">
         <tr>
-            <td><c:out value="${course.theme}" /></td>
-            <td><c:out value="${course.nameOfCourses}" /></td>
-            <td><c:out value="${course.startOfCourses}" /></td>
-            <td><c:out value="${course.endOfCourses}" /></td>
-            <td><c:out value="${course.price}" /></td>
+            <td><c:out value="${course.theme}"/></td>
+            <td><c:out value="${course.nameOfCourses}"/></td>
+            <td><c:out value="${course.startOfCourses}"/></td>
+            <td><c:out value="${course.endOfCourses}"/></td>
+            <td><c:out value="${course.price}"/></td>
         </tr>
     </c:forEach>
     </tbody>

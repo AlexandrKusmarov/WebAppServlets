@@ -6,10 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import util.ConnectionBuilder;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -46,5 +43,30 @@ public class CoursesDaoImpl implements CoursesDao {
             logger.error(e.getMessage(), e);
         }
         return coursesList;
+    }
+
+    @Override
+    public Courses getCourseById(Long idCourse) throws SQLException {
+        String sql = "SELECT * FROM courses where  idCourses= ?";
+
+        Courses courses = null;
+
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+
+            ps.setInt(1, idCourse.intValue());
+            ResultSet resultSet = ps.executeQuery();
+
+            if (resultSet.next()) {
+                String theme = resultSet.getString("theme");
+                String courseName = resultSet.getString("nameOfCourses");
+                Date courseStart = resultSet.getDate("startOfCourses");
+                Date courseEnd = resultSet.getDate("endOfCourses");
+                Integer price = resultSet.getInt("price");
+
+                courses = new Courses(theme, courseName, courseStart, courseEnd, price);
+            }
+        }
+        return courses;
     }
 }

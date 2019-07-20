@@ -6,6 +6,7 @@ import model.User;
 import service.UserService;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public class UserServiceImpl implements UserService {
 
@@ -29,5 +30,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public Role getCurrentUserRole(String login) throws SQLException {
         return userDAOimpl.getCurrentUserRole(login);
+    }
+
+    @Override
+    public void editTecher(User user) throws SQLException {
+        userDAOimpl.editTeacher(user);
+    }
+
+    @Override
+    public List<User> listAccounts() throws SQLException {
+        return userDAOimpl.listAccounts();
     }
 }

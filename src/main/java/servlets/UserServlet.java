@@ -4,8 +4,10 @@ import model.Role;
 import model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import service.impl.CoursesServiceImpl;
 import service.impl.UserServiceImpl;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,11 +15,14 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserServlet extends HttpServlet {
 
     private static Logger logger = LoggerFactory.getLogger(UserServlet.class);
     private UserServiceImpl userService = new UserServiceImpl();
+    private CoursesServiceImpl coursesService = new CoursesServiceImpl();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
@@ -34,6 +39,28 @@ public class UserServlet extends HttpServlet {
             case "/logout":
                 logout(request,response);
                 break;
+            case "/addTeacher":
+                addNewTeacher(request,response);
+                break;
+        }
+    }
+
+    private void addNewTeacher(HttpServletRequest request, HttpServletResponse response) {
+        logger.info("Enter method addNewTeacher()");
+
+        String login = request.getParameter("login");
+        String password = request.getParameter("password");
+        String email = request.getParameter("email");
+        Role role = Role.TEACHER;
+
+        User user = new User(login,password, email, role);
+        userService.createUser(user);
+
+        try {
+            response.sendRedirect("coursesList");
+        } catch (IOException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
         }
     }
 
@@ -52,10 +79,15 @@ public class UserServlet extends HttpServlet {
                 break;
             case "/login":
                 request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
-                request.getSession(false);
                 break;
             case "/logout":
                 request.getRequestDispatcher("WEB-INF/view/logout.jsp").forward(request, response);
+                break;
+            case "/addTeacher":
+                request.getRequestDispatcher("WEB-INF/view/addTeacher.jsp").forward(request, response);
+                break;
+            case "/accounts":
+                listAccounts(request,response);
                 break;
             default:
                 response.sendRedirect("error");
@@ -81,10 +113,11 @@ public class UserServlet extends HttpServlet {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         String email = request.getParameter("email");
+        boolean isActive = true;
 
         if(!userService.findUserByLogin(login)) {
 
-            User user = new User(login, password, email, Role.STUDENT);
+            User user = new User(login, password, email, Role.STUDENT, isActive);
             logger.debug("Enter method insertUser: login:{}  email:{} ", login, email);
 
             try {
@@ -145,6 +178,19 @@ public class UserServlet extends HttpServlet {
         }
     }
 
+    private void listAccounts (HttpServletRequest request, HttpServletResponse response) {
+
+        logger.info("Enter method listAccounts()");
+
+        try {
+            request.setAttribute("accounts",userService.listAccounts());
+            RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/view/accounts.jsp");
+            dispatcher.forward(request, response);
+        } catch (SQLException | ServletException | IOException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
+    }
 
 
 }

@@ -23,26 +23,28 @@ public class UserDaoimpl implements UserDao {
         logger.info("Enter method insertNewUser");
         boolean rowInserted = false;
 
-            String sql = "INSERT INTO usr (login, password, email, userRole) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO usr (login, password, email, userRole, isActive) VALUES (?, ?, ?, ?, ?)";
 
-            try (Connection connection = ConnectionBuilder.getConnection();
-                 PreparedStatement ps = connection.prepareStatement(sql)) {
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
 
-                ps.setString(1, user.getLogin());
-                ps.setString(2, user.getPassword());
-                ps.setString(3, user.getEmail());
-                ps.setString(4, Role.STUDENT.toString());
+            ps.setString(1, user.getLogin());
+            ps.setString(2, user.getPassword());
+            ps.setString(3, user.getEmail());
+            ps.setString(4, String.valueOf(user.getRole()));
+            ps.setBoolean(5, user.isActive());
 
-                rowInserted = ps.executeUpdate() > 0;
+            rowInserted = ps.executeUpdate() > 0;
 
-            } catch (SQLException e) {
-                e.printStackTrace();
-                logger.error(e.getMessage(), e);
-            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
+        logger.info("{}  <{}> was added.", user.getRole(), user.getLogin());
         return rowInserted;
     }
 
-    public boolean findUserByLoginAndPswd(String login,String password) {
+    public boolean findUserByLoginAndPswd(String login, String password) {
 
         logger.info("Enter method findUserByLoginAndPswd");
         String sql = "SELECT * FROM usr where login = ? AND password= ?";
@@ -55,7 +57,7 @@ public class UserDaoimpl implements UserDao {
             ps.setString(2, password);
             ResultSet resultSet = ps.executeQuery();
 
-            if(resultSet.next()){
+            if (resultSet.next()) {
                 isFind = true;
             }
 
@@ -79,7 +81,7 @@ public class UserDaoimpl implements UserDao {
             ps.setString(1, login);
             ResultSet resultSet = ps.executeQuery();
 
-            if(resultSet.next()){
+            if (resultSet.next()) {
                 isFind = true;
             }
 
@@ -103,7 +105,7 @@ public class UserDaoimpl implements UserDao {
             ps.setString(1, login);
             ResultSet resultSet = ps.executeQuery();
 
-            if(resultSet.next()){
+            if (resultSet.next()) {
                 role = resultSet.getString("userRole");
             }
 
@@ -112,5 +114,48 @@ public class UserDaoimpl implements UserDao {
             logger.error(e.getMessage(), e);
         }
         return Role.valueOf(role);
+    }
+
+    @Override
+    public void editTeacher(User user) {
+        String sql = "INSERT INTO usr (login, password, email, userRole) VALUES (?, ?, ?, ?)";
+
+//        try (Connection connection = ConnectionBuilder.getConnection();
+//             PreparedStatement ps = connection.prepareStatement(sql)) {
+//
+//            ps.setString(1, user.getLogin());
+//            ps.setString(2, user.getPassword());
+//            ps.setString(3, user.getEmail());
+//            ps.setString(4, String.valueOf(user.getRole()));
+//
+//            rowInserted = ps.executeUpdate() > 0;
+
+//        }
+    }
+
+    @Override
+    public List<User> listAccounts() throws SQLException {
+
+        logger.info("Enter method listAccounts");
+
+        List<User> usersList = new ArrayList<>();
+        String sql = "SELECT * FROM usr";
+
+        try (Connection connection = ConnectionBuilder.getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(sql)) {
+
+            while (resultSet.next()) {
+                String login = resultSet.getString("login");
+                String userRole = resultSet.getString("userRole");
+                String password = resultSet.getString("password");
+                String email = resultSet.getString("email");
+                boolean isActive = resultSet.getBoolean("isActive");
+
+                usersList.add(new User(login, password, email, Role.valueOf(userRole), isActive));
+            }
+        }
+        logger.info("Number of accounts: {}", usersList.size());
+        return usersList;
     }
 }

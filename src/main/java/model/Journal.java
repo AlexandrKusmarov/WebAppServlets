@@ -7,6 +7,7 @@ public class Journal {
     private Long idJournal;
     private Integer mark;
     private Set<Courses> coursesSet;
+
     private Set<User> users;
 
     public Journal() {

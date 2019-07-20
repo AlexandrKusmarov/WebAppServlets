@@ -9,9 +9,10 @@ public class User {
     private String password;
     private String email;
     private Role role;
-
+    private boolean isActive;
     private Integer mark;
     private Set<Courses> coursesSet;
+
 
     private Journal journal;
 
@@ -20,30 +21,30 @@ public class User {
     }
 
     //Constructor for Students
-    public User(String login, String password, String email, Integer mark, Set<Courses> coursesSet) {
+    public User(String login, String password, String email, Integer mark, Set<Courses> coursesSet,boolean isActive) {
         this.login = login;
         this.password = password;
         this.email = email;
         this.mark = mark;
         this.coursesSet = coursesSet;
+        this.isActive = isActive;
     }
 
     //Constructor for registration
-    public User(String login, String password, String email, Role role) {
+    public User(String login, String password, String email, Role role,boolean isActive) {
         this.login = login;
         this.password = password;
         this.email = email;
         this.role = role;
+        this.isActive = isActive;
     }
 
     //Constructor for Teachers
-    public User(Long idUser, String login, String email, Role role, Set<Courses> coursesSet, Journal journal) {
-        this.idUser = idUser;
+    public User( String login, String password, String email, Role role) {
         this.login = login;
         this.email = email;
         this.role = role;
-        this.coursesSet = coursesSet;
-        this.journal = journal;
+        this.password = password;
     }
 
     public Integer getMark() {
@@ -108,5 +109,13 @@ public class User {
 
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
     }
 }
