@@ -20,7 +20,6 @@ public class UserServlet extends HttpServlet {
 
     private static Logger logger = LoggerFactory.getLogger(UserServlet.class);
     private UserServiceImpl userService = new UserServiceImpl();
-    private CoursesServiceImpl coursesService = new CoursesServiceImpl();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,28 +40,8 @@ public class UserServlet extends HttpServlet {
                 addNewTeacher(request,response);
                 break;
             case "/onOffAccount":
-//                request.getRequestDispatcher("WEB-INF/view/accounts.jsp").forward(request, response);
                 changeAccountStatus(request, response);
                 break;
-        }
-    }
-
-    private void addNewTeacher(HttpServletRequest request, HttpServletResponse response) {
-        logger.info("Enter method addNewTeacher()");
-
-        String login = request.getParameter("login");
-        String password = request.getParameter("password");
-        String email = request.getParameter("email");
-        Role role = Role.TEACHER;
-
-        User user = new User(login,password, email, role);
-        userService.createUser(user);
-
-        try {
-            response.sendRedirect("coursesList");
-        } catch (IOException e) {
-            e.printStackTrace();
-            logger.error(e.getMessage(), e);
         }
     }
 
@@ -91,10 +70,6 @@ public class UserServlet extends HttpServlet {
             case "/accounts":
                 listAccounts(request,response);
                 break;
-//            case "/onOffAccount":
-//
-//                changeAccountStatus(request, response);
-//                break;
             default:
                 response.sendRedirect("error");
         }
@@ -154,7 +129,6 @@ public class UserServlet extends HttpServlet {
 
     private void checkUserByLoginAndPswd(HttpServletRequest request, HttpServletResponse response) {
 
-
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         logger.debug("Method checkUserByLogin: login:{} ", login);
@@ -165,8 +139,8 @@ public class UserServlet extends HttpServlet {
                 HttpSession session = request.getSession(true);
                 session.setAttribute("userName", login);
                 session.setAttribute("role",userService.getCurrentUserRole(login));
-                logger.info("Opened session, logged In.");
 
+                logger.info("Opened session, logged In.");
 
                 response.sendRedirect("coursesList");
                 request.setAttribute("error", "");
@@ -179,6 +153,25 @@ public class UserServlet extends HttpServlet {
             logger.error(e.getMessage(), e);
             e.printStackTrace();
         } catch (ServletException | SQLException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
+    }
+
+    private void addNewTeacher(HttpServletRequest request, HttpServletResponse response) {
+        logger.info("Enter method addNewTeacher()");
+
+        String login = request.getParameter("login");
+        String password = request.getParameter("password");
+        String email = request.getParameter("email");
+        Role role = Role.TEACHER;
+
+        User user = new User(login,password, email, role);
+        userService.createUser(user);
+
+        try {
+            response.sendRedirect("coursesList");
+        } catch (IOException e) {
             e.printStackTrace();
             logger.error(e.getMessage(), e);
         }
@@ -199,7 +192,6 @@ public class UserServlet extends HttpServlet {
     }
 
     private void changeAccountStatus(HttpServletRequest request, HttpServletResponse response) {
-
         Long id = Long.parseLong(request.getParameter("activity"));
         logger.info("Enter method changeAccountStatus(). Param: id={};",id);
 

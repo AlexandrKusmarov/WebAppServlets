@@ -210,7 +210,32 @@ public class UserDaoimpl implements UserDao {
 
         } catch (SQLException e) {
             e.printStackTrace();
-            logger.error(e.getMessage(),e);
+            logger.error(e.getMessage(), e);
         }
+    }
+
+    @Override
+    public boolean checkPermission(String userName) {
+        logger.info("Enter method checkPermission() userName={}", userName);
+
+        String sql = "SELECT isActive FROM usr where  login= ?";
+
+        boolean isActive = false;
+
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+
+            ps.setString(1, userName);
+            ResultSet resultSet = ps.executeQuery();
+
+            if (resultSet.next()) {
+                isActive = resultSet.getBoolean("isActive");
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
+        return isActive;
     }
 }

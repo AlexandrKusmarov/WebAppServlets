@@ -1,17 +1,23 @@
 package servlets.filters;
 
+import model.Role;
+import model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import service.UserService;
+import service.impl.UserServiceImpl;
 import servlets.UserServlet;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class AuthorizationFilter implements Filter {
 
     private static Logger logger = LoggerFactory.getLogger(UserServlet.class);
+    UserServiceImpl userService = new UserServiceImpl();
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -22,13 +28,19 @@ public class AuthorizationFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpSession session = req.getSession(true);
         String userName = (String) session.getAttribute("userName");
+        Role role = (Role) session.getAttribute("role");
 
         logger.info("Enter doFilter() userName == {}", userName);
 
-        if (userName == null) {
-            request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
-        } else {
-            chain.doFilter(request, response);
+        try {
+            if (userName == null || (Role.STUDENT == role && !userService.checkPermission(userName))) {
+                request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
+            }
+            else {
+                chain.doFilter(request, response);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 

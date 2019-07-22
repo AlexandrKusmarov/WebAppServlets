@@ -52,4 +52,9 @@ public class UserServiceImpl implements UserService {
         userDAOimpl.updateUser(id, login, password, email, userRole, isActive);
 
     }
+
+    @Override
+    public boolean checkPermission(String userName) throws SQLException {
+        return userDAOimpl.checkPermission(userName);
+    }
 }
