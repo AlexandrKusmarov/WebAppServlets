@@ -15,4 +15,6 @@ public interface UserService {
     void editTecher(User user) throws SQLException;
 
     List<User> listAccounts() throws SQLException;
+    User getUserById(Long id) throws SQLException;
+    void editUser(Long id, String login, String password, String email, String userRole, boolean isActive) throws SQLException;
 }

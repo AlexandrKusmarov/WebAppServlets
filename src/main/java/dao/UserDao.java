@@ -15,4 +15,8 @@ public interface UserDao {
     void editTeacher(User user);
 
     List<User> listAccounts() throws SQLException;
+
+    User getUserById(Long id) throws SQLException;
+
+    void updateUser(Long id, String login, String password, String email, String userRole, boolean isActive);
 }

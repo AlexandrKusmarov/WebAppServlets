@@ -15,24 +15,39 @@
         <th>Role</th>
         <th>Account activity</th>
     </tr>
-    <div style="text-align: right">
-            <form method="post" action="logout">
-                <button type="submit" name="logout" id="logoutid">Logout</button>
-            </form>
-    </div>
-
     </thead>
     <tbody>
     <c:forEach var="account" items="${accounts}">
+
         <tr>
+
             <td><c:out value="${account.login}"/></td>
             <td><c:out value="${account.role}"/></td>
 
             <c:choose>
                 <c:when test="${account.role == ('STUDENT')}">
-                    <td><c:out value="${account.isActive()}"/></td>
+                    <form action="onOffAccount" method="post">
+                        <c:choose>
+                            <c:when test="${account.isActive()}">
+                                <td><c:out value="active"/>
+                                    <button style="background-color: mediumseagreen" type="submit"
+                                            name="activity" id="activity" value="${account.idUser}">Disable
+                                    </button>
+                                </td>
+                            </c:when>
+                            <c:otherwise>
+                                <td>
+                                    <c:out value="locked"/>
+                                    <button style="background-color: palevioletred" type="submit"
+                                            name="activity" value="${account.idUser}">Enable
+                                    </button>
+                                </td>
+                            </c:otherwise>
+                        </c:choose>
+                    </form>
                 </c:when>
             </c:choose>
+
         </tr>
     </c:forEach>
     </tbody>

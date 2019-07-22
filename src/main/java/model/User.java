@@ -38,6 +38,15 @@ public class User {
         this.role = role;
         this.isActive = isActive;
     }
+    //Constructor for registration
+    public User(Long idUser, String login, String password, String email, Role role,boolean isActive) {
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.role = role;
+        this.isActive = isActive;
+        this.idUser = idUser;
+    }
 
     //Constructor for Teachers
     public User( String login, String password, String email, Role role) {

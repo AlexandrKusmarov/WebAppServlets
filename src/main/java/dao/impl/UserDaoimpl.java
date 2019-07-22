@@ -146,16 +146,71 @@ public class UserDaoimpl implements UserDao {
              ResultSet resultSet = statement.executeQuery(sql)) {
 
             while (resultSet.next()) {
+                Long idUser = resultSet.getLong("idUser");
                 String login = resultSet.getString("login");
                 String userRole = resultSet.getString("userRole");
                 String password = resultSet.getString("password");
                 String email = resultSet.getString("email");
                 boolean isActive = resultSet.getBoolean("isActive");
 
-                usersList.add(new User(login, password, email, Role.valueOf(userRole), isActive));
+                usersList.add(new User(idUser, login, password, email, Role.valueOf(userRole), isActive));
             }
         }
         logger.info("Number of accounts: {}", usersList.size());
         return usersList;
+    }
+
+    @Override
+    public User getUserById(Long id) throws SQLException {
+        logger.info("Enter method getUserById() ID={}", id);
+
+        String sql = "SELECT * FROM usr where  idUser= ?";
+
+        User user = null;
+
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+
+            ps.setInt(1, id.intValue());
+            ResultSet resultSet = ps.executeQuery();
+
+            if (resultSet.next()) {
+                String login = resultSet.getString("login");
+                String password = resultSet.getString("password");
+                String email = resultSet.getString("email");
+                Role userRole = Role.valueOf(resultSet.getString("userRole"));
+                boolean isActive = resultSet.getBoolean("isActive");
+
+                user = new User(login, password, email, userRole, isActive);
+            }
+        }
+        return user;
+    }
+
+    @Override
+    public void updateUser(Long id, String login, String password, String email, String userRole, boolean isActive) {
+
+        logger.info("Enter method updateUser()");
+        String sql = "update usr set login=?, password=?, email=?, userRole=?, isActive=? " + "where idUser =?";
+
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+
+            ps.setString(1, login);
+            ps.setString(2, password);
+            ps.setString(3, email);
+            ps.setString(4, userRole);
+            ps.setBoolean(5, isActive);
+            ps.setInt(6, id.intValue());
+
+            int rowUpdated = ps.executeUpdate();
+            if (rowUpdated > 0) {
+                logger.info("User <{}> was updated.", login);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(),e);
+        }
     }
 }

@@ -41,4 +41,15 @@ public class UserServiceImpl implements UserService {
     public List<User> listAccounts() throws SQLException {
         return userDAOimpl.listAccounts();
     }
+
+    @Override
+    public User getUserById(Long id) throws SQLException {
+        return userDAOimpl.getUserById(id);
+    }
+
+    @Override
+    public void editUser(Long id, String login, String password, String email, String userRole, boolean isActive) throws SQLException {
+        userDAOimpl.updateUser(id, login, password, email, userRole, isActive);
+
+    }
 }

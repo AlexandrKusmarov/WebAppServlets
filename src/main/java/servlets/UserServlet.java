@@ -15,8 +15,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class UserServlet extends HttpServlet {
 
@@ -25,7 +23,7 @@ public class UserServlet extends HttpServlet {
     private CoursesServiceImpl coursesService = new CoursesServiceImpl();
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String action = request.getServletPath();
         logger.info("Enter method doPost, ACTION: {}", action);
@@ -41,6 +39,10 @@ public class UserServlet extends HttpServlet {
                 break;
             case "/addTeacher":
                 addNewTeacher(request,response);
+                break;
+            case "/onOffAccount":
+//                request.getRequestDispatcher("WEB-INF/view/accounts.jsp").forward(request, response);
+                changeAccountStatus(request, response);
                 break;
         }
     }
@@ -89,6 +91,10 @@ public class UserServlet extends HttpServlet {
             case "/accounts":
                 listAccounts(request,response);
                 break;
+//            case "/onOffAccount":
+//
+//                changeAccountStatus(request, response);
+//                break;
             default:
                 response.sendRedirect("error");
         }
@@ -192,5 +198,25 @@ public class UserServlet extends HttpServlet {
         }
     }
 
+    private void changeAccountStatus(HttpServletRequest request, HttpServletResponse response) {
 
+        Long id = Long.parseLong(request.getParameter("activity"));
+        logger.info("Enter method changeAccountStatus(). Param: id={};",id);
+
+        try {
+            User user = userService.getUserById(id);
+            String login = user.getLogin();
+            String password = user.getPassword();
+            String email = user.getEmail();
+            String role = String.valueOf(user.getRole());
+            boolean isActive = !user.isActive();
+
+            userService.editUser(id, login, password, email, role, isActive);
+            response.sendRedirect("accounts");
+
+        } catch (SQLException | IOException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
+    }
 }
