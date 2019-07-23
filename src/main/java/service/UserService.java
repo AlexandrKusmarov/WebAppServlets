@@ -13,10 +13,9 @@ public interface UserService {
     boolean findUserByLogin(String login) throws SQLException;
     Role getCurrentUserRole(String login) throws SQLException;
     void editTecher(User user) throws SQLException;
-
     List<User> listAccounts() throws SQLException;
     User getUserById(Long id) throws SQLException;
     void editUser(Long id, String login, String password, String email, String userRole, boolean isActive) throws SQLException;
-
     boolean checkPermission(String userName)throws SQLException ;
+    User getUserByLogin(String login) throws SQLException;
 }

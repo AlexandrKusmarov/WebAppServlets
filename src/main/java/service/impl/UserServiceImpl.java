@@ -57,4 +57,9 @@ public class UserServiceImpl implements UserService {
     public boolean checkPermission(String userName) throws SQLException {
         return userDAOimpl.checkPermission(userName);
     }
+
+    @Override
+    public User getUserByLogin(String login) throws SQLException {
+        return userDAOimpl.getUserByLogin(login);
+    }
 }

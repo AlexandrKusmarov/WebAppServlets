@@ -4,7 +4,6 @@ import model.Role;
 import model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import service.impl.CoursesServiceImpl;
 import service.impl.UserServiceImpl;
 
 import javax.servlet.RequestDispatcher;
@@ -42,8 +41,14 @@ public class UserServlet extends HttpServlet {
             case "/onOffAccount":
                 changeAccountStatus(request, response);
                 break;
+            case "/profile":
+                updateUser(request, response);
+                break;
         }
+
     }
+
+
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -70,10 +75,16 @@ public class UserServlet extends HttpServlet {
             case "/accounts":
                 listAccounts(request,response);
                 break;
+            case "/profile":
+                request.getRequestDispatcher("WEB-INF/view/profile.jsp").forward(request, response);
+                getUserByLogin(request,response);
+                break;
             default:
                 response.sendRedirect("error");
         }
     }
+
+
 
     private void logout(HttpServletRequest request, HttpServletResponse response) {
         logger.info("Enter method logout()");
@@ -139,6 +150,8 @@ public class UserServlet extends HttpServlet {
                 HttpSession session = request.getSession(true);
                 session.setAttribute("userName", login);
                 session.setAttribute("role",userService.getCurrentUserRole(login));
+                session.setAttribute("password", userService.getUserByLogin(login).getPassword());
+                session.setAttribute("mail", userService.getUserByLogin(login).getEmail());
 
                 logger.info("Opened session, logged In.");
 
@@ -211,4 +224,41 @@ public class UserServlet extends HttpServlet {
             logger.error(e.getMessage(), e);
         }
     }
+
+    private void getUserByLogin(HttpServletRequest request, HttpServletResponse response) {
+        logger.info("Enter method getUserByLogin()");
+//        User user = null;
+//        HttpSession session = request.getSession(false);
+//        String login = (String)session.getAttribute ("userName");
+//        try {
+//            user = userService.getUserByLogin(login);
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//            logger.error(e.getMessage(), e);
+//        }
+    }
+
+    private void updateUser(HttpServletRequest request, HttpServletResponse response) {
+        logger.info("Enter method updateUser()");
+        HttpSession session = request.getSession(false);
+        String login = (String) session.getAttribute("userName");
+        try {
+            User user = userService.getUserByLogin(login);
+            Long id = user.getIdUser();
+            String newLogin = request.getParameter("login");
+            String newPassword = request.getParameter("password");
+            String newEmail = request.getParameter("mail");
+            String role = String.valueOf(user.getRole());
+            boolean isActive = user.isActive();
+            userService.editUser(id,newLogin,newPassword,newEmail,role,isActive);
+
+            response.sendRedirect("coursesList");
+            request.setAttribute("updated", "Profile has been updated");
+
+        } catch (SQLException | IOException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
+    }
+
 }

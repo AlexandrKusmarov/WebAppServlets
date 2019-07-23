@@ -1,8 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 <html>
 <jsp:include page="../static/navbar.jsp"/>
@@ -15,20 +14,11 @@
         <th>End date</th>
         <th>Price</th>
     </tr>
-    <div style="text-align: right">
-        <div>
-            <%=session.getAttribute("userName")%>
-            <%=session.getAttribute("role")%>
-        </div>
-        <div>
-            <form method="post" action="logout">
-                <button type="submit" name="logout" id="logoutid">Logout</button>
-            </form>
-        </div>
-    </div>
-
     </thead>
     <tbody>
+    <div>
+        <span style="color: maroon">${updated}</span>
+    </div>
     <c:forEach var="course" items="${coursesList}">
         <tr>
             <td><c:out value="${course.theme}"/></td>

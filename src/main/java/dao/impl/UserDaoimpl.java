@@ -238,4 +238,32 @@ public class UserDaoimpl implements UserDao {
         }
         return isActive;
     }
+
+    @Override
+    public User getUserByLogin(String login) throws SQLException {
+        logger.info("Enter method getUserByLogin() Login={}", login);
+
+        String sql = "SELECT * FROM usr where  login= ?";
+
+        User user = null;
+
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+
+            ps.setString(1, login);
+            ResultSet resultSet = ps.executeQuery();
+
+            if (resultSet.next()) {
+                Long idUser = resultSet.getLong("idUser");
+                String password = resultSet.getString("password");
+                String email = resultSet.getString("email");
+                Role userRole = Role.valueOf(resultSet.getString("userRole"));
+                boolean isActive = resultSet.getBoolean("isActive");
+
+                user = new User(idUser ,login, password, email, userRole, isActive);
+            }
+            logger.info("User <{}> was found.", login);
+        }
+        return user;
+    }
 }

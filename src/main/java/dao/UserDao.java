@@ -12,13 +12,11 @@ public interface UserDao {
     boolean findUserByLoginAndPswd(String login, String password) throws SQLException;
     boolean findUserByLogin(String login) throws SQLException;
     Role getCurrentUserRole(String login) throws SQLException;
-    void editTeacher(User user);
-
+    void editTeacher(User user) throws SQLException ;
     List<User> listAccounts() throws SQLException;
-
     User getUserById(Long id) throws SQLException;
-
     void updateUser(Long id, String login, String password, String email, String userRole, boolean isActive);
-
     boolean checkPermission(String userName) throws SQLException;
+
+    User getUserByLogin(String login) throws SQLException;
 }

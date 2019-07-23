@@ -10359,3 +10359,1845 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 2019-07-22 13:25:02 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
 2019-07-22 13:25:02 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
 2019-07-22 13:25:02 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 13:26:27 INFO  UserServlet:52 - Enter method doGet, ACTION: /
+2019-07-22 13:26:27 INFO  UserServlet:52 - Enter method doGet, ACTION: /
+2019-07-22 13:26:27 INFO  UserServlet:52 - Enter method doGet, ACTION: /
+2019-07-22 13:26:29 INFO  UserServlet:52 - Enter method doGet, ACTION: /login
+2019-07-22 13:26:32 INFO  UserServlet:28 - Enter method doPost, ACTION: /login
+2019-07-22 13:26:32 DEBUG UserServlet:134 - Method checkUserByLogin: login:adm 
+2019-07-22 13:26:32 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 13:26:32 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 13:26:32 INFO  UserServlet:143 - Opened session, logged In.
+2019-07-22 13:26:32 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-22 13:26:32 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-22 13:26:32 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 13:26:32 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 13:26:40 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-22 13:26:40 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-22 13:26:40 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 13:26:40 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 13:26:42 INFO  UserServlet:52 - Enter method doGet, ACTION: /addTeacher
+2019-07-22 13:26:48 INFO  UserServlet:28 - Enter method doPost, ACTION: /logout
+2019-07-22 13:26:48 INFO  UserServlet:79 - Enter method logout()
+2019-07-22 13:26:48 INFO  UserServlet:85 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-22 13:26:48 INFO  UserServlet:52 - Enter method doGet, ACTION: /logout
+2019-07-22 13:26:48 INFO  UserServlet:52 - Enter method doGet, ACTION: /login
+2019-07-22 13:26:57 INFO  UserServlet:28 - Enter method doPost, ACTION: /login
+2019-07-22 13:26:57 DEBUG UserServlet:134 - Method checkUserByLogin: login:admin 
+2019-07-22 13:26:57 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 13:26:57 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 13:26:57 INFO  UserServlet:143 - Opened session, logged In.
+2019-07-22 13:26:57 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 13:26:57 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 13:26:57 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 13:27:01 INFO  UserServlet:52 - Enter method doGet, ACTION: /accounts
+2019-07-22 13:27:01 INFO  UserServlet:182 - Enter method listAccounts()
+2019-07-22 13:27:01 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-22 13:27:01 INFO  UserDaoimpl:159 - Number of accounts: 4
+2019-07-22 13:27:13 INFO  UserServlet:28 - Enter method doPost, ACTION: /onOffAccount
+2019-07-22 13:27:13 INFO  UserServlet:196 - Enter method changeAccountStatus(). Param: id=3;
+2019-07-22 13:27:13 INFO  UserDaoimpl:165 - Enter method getUserById() ID=3
+2019-07-22 13:27:13 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-22 13:27:13 INFO  UserDaoimpl:208 - User <stud1> was updated.
+2019-07-22 13:27:14 INFO  UserServlet:52 - Enter method doGet, ACTION: /accounts
+2019-07-22 13:27:14 INFO  UserServlet:182 - Enter method listAccounts()
+2019-07-22 13:27:14 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-22 13:27:14 INFO  UserDaoimpl:159 - Number of accounts: 4
+2019-07-22 13:27:16 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 13:27:16 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 13:27:16 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 13:27:25 INFO  UserServlet:28 - Enter method doPost, ACTION: /logout
+2019-07-22 13:27:25 INFO  UserServlet:79 - Enter method logout()
+2019-07-22 13:27:25 INFO  UserServlet:85 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-22 13:27:25 INFO  UserServlet:52 - Enter method doGet, ACTION: /logout
+2019-07-22 13:27:25 INFO  UserServlet:52 - Enter method doGet, ACTION: /login
+2019-07-22 13:27:28 INFO  UserServlet:52 - Enter method doGet, ACTION: /registration
+2019-07-22 13:27:40 INFO  UserServlet:28 - Enter method doPost, ACTION: /registration
+2019-07-22 13:27:40 INFO  UserDaoimpl:75 - Enter method findUserByLogin
+2019-07-22 13:27:40 DEBUG UserServlet:102 - Enter method insertUser: login:stud3  email:stud3@stud3 
+2019-07-22 13:27:40 INFO  UserDaoimpl:23 - Enter method insertNewUser
+2019-07-22 13:27:40 INFO  UserDaoimpl:43 - STUDENT  <stud3> was added.
+2019-07-22 13:27:40 INFO  UserServlet:52 - Enter method doGet, ACTION: /login
+2019-07-22 13:27:48 INFO  UserServlet:28 - Enter method doPost, ACTION: /login
+2019-07-22 13:27:48 DEBUG UserServlet:134 - Method checkUserByLogin: login:stud3 
+2019-07-22 13:27:48 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 13:27:48 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 13:27:48 INFO  UserServlet:143 - Opened session, logged In.
+2019-07-22 13:27:48 INFO  UserServlet:33 - Enter doFilter() userName == stud3
+2019-07-22 13:27:48 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=stud3
+2019-07-22 13:27:48 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 13:27:48 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 13:27:52 INFO  UserServlet:28 - Enter method doPost, ACTION: /logout
+2019-07-22 13:27:52 INFO  UserServlet:79 - Enter method logout()
+2019-07-22 13:27:52 INFO  UserServlet:85 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-22 13:27:52 INFO  UserServlet:52 - Enter method doGet, ACTION: /logout
+2019-07-22 13:27:52 INFO  UserServlet:52 - Enter method doGet, ACTION: /login
+2019-07-22 13:27:56 INFO  UserServlet:52 - Enter method doGet, ACTION: /registration
+2019-07-22 13:28:08 INFO  UserServlet:28 - Enter method doPost, ACTION: /registration
+2019-07-22 13:28:08 INFO  UserDaoimpl:75 - Enter method findUserByLogin
+2019-07-22 13:28:08 DEBUG UserServlet:102 - Enter method insertUser: login:stud4  email:stud4@stud4 
+2019-07-22 13:28:08 INFO  UserDaoimpl:23 - Enter method insertNewUser
+2019-07-22 13:28:08 INFO  UserDaoimpl:43 - STUDENT  <stud4> was added.
+2019-07-22 13:28:08 INFO  UserServlet:52 - Enter method doGet, ACTION: /login
+2019-07-22 13:28:18 INFO  UserServlet:28 - Enter method doPost, ACTION: /login
+2019-07-22 13:28:18 DEBUG UserServlet:134 - Method checkUserByLogin: login:admin 
+2019-07-22 13:28:18 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 13:28:18 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 13:28:18 INFO  UserServlet:143 - Opened session, logged In.
+2019-07-22 13:28:18 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 13:28:18 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 13:28:18 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 13:28:20 INFO  UserServlet:52 - Enter method doGet, ACTION: /accounts
+2019-07-22 13:28:20 INFO  UserServlet:182 - Enter method listAccounts()
+2019-07-22 13:28:20 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-22 13:28:20 INFO  UserDaoimpl:159 - Number of accounts: 6
+2019-07-22 13:28:24 INFO  UserServlet:28 - Enter method doPost, ACTION: /onOffAccount
+2019-07-22 13:28:24 INFO  UserServlet:196 - Enter method changeAccountStatus(). Param: id=5;
+2019-07-22 13:28:24 INFO  UserDaoimpl:165 - Enter method getUserById() ID=5
+2019-07-22 13:28:24 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-22 13:28:24 INFO  UserDaoimpl:208 - User <stud3> was updated.
+2019-07-22 13:28:24 INFO  UserServlet:52 - Enter method doGet, ACTION: /accounts
+2019-07-22 13:28:24 INFO  UserServlet:182 - Enter method listAccounts()
+2019-07-22 13:28:24 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-22 13:28:24 INFO  UserDaoimpl:159 - Number of accounts: 6
+2019-07-22 13:28:25 INFO  UserServlet:28 - Enter method doPost, ACTION: /onOffAccount
+2019-07-22 13:28:25 INFO  UserServlet:196 - Enter method changeAccountStatus(). Param: id=3;
+2019-07-22 13:28:25 INFO  UserDaoimpl:165 - Enter method getUserById() ID=3
+2019-07-22 13:28:25 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-22 13:28:26 INFO  UserDaoimpl:208 - User <stud1> was updated.
+2019-07-22 13:28:26 INFO  UserServlet:52 - Enter method doGet, ACTION: /accounts
+2019-07-22 13:28:26 INFO  UserServlet:182 - Enter method listAccounts()
+2019-07-22 13:28:26 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-22 13:28:26 INFO  UserDaoimpl:159 - Number of accounts: 6
+2019-07-22 13:45:34 INFO  UserServlet:52 - Enter method doGet, ACTION: /addTeacher
+2019-07-22 13:45:59 INFO  UserServlet:52 - Enter method doGet, ACTION: /addTeacher
+2019-07-22 15:17:55 INFO  UserServlet:52 - Enter method doGet, ACTION: /
+2019-07-22 15:17:55 INFO  UserServlet:52 - Enter method doGet, ACTION: /
+2019-07-22 15:17:56 INFO  UserServlet:52 - Enter method doGet, ACTION: /
+2019-07-22 15:17:56 INFO  UserServlet:52 - Enter method doGet, ACTION: /favicon.ico
+2019-07-22 15:18:02 INFO  UserServlet:52 - Enter method doGet, ACTION: /login
+2019-07-22 15:18:06 INFO  UserServlet:28 - Enter method doPost, ACTION: /login
+2019-07-22 15:18:06 DEBUG UserServlet:134 - Method checkUserByLogin: login:adm 
+2019-07-22 15:18:06 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 15:18:06 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 15:18:06 INFO  UserServlet:143 - Opened session, logged In.
+2019-07-22 15:18:06 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-22 15:18:06 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-22 15:18:06 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 15:18:06 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 15:18:09 INFO  UserServlet:52 - Enter method doGet, ACTION: /profile
+2019-07-22 15:18:57 INFO  UserServlet:52 - Enter method doGet, ACTION: /profile
+2019-07-22 15:19:13 INFO  UserServlet:52 - Enter method doGet, ACTION: /profile
+2019-07-22 15:20:21 INFO  UserServlet:52 - Enter method doGet, ACTION: /
+2019-07-22 15:20:21 INFO  UserServlet:52 - Enter method doGet, ACTION: /
+2019-07-22 15:20:22 INFO  UserServlet:52 - Enter method doGet, ACTION: /
+2019-07-22 15:20:23 INFO  UserServlet:52 - Enter method doGet, ACTION: /login
+2019-07-22 15:20:25 INFO  UserServlet:28 - Enter method doPost, ACTION: /login
+2019-07-22 15:20:25 DEBUG UserServlet:137 - Method checkUserByLogin: login:adm 
+2019-07-22 15:20:25 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 15:20:25 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 15:20:25 INFO  UserServlet:146 - Opened session, logged In.
+2019-07-22 15:20:25 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-22 15:20:25 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-22 15:20:25 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 15:20:25 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 15:20:27 INFO  UserServlet:52 - Enter method doGet, ACTION: /profile
+2019-07-22 15:21:48 INFO  UserServlet:52 - Enter method doGet, ACTION: /profile
+2019-07-22 15:53:39 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 15:53:39 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 15:53:39 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 15:53:40 INFO  UserServlet:51 - Enter method doGet, ACTION: /favicon.ico
+2019-07-22 15:53:40 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 15:53:45 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 15:53:45 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 15:53:45 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 15:53:45 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 15:53:45 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 15:53:45 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 15:53:45 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 15:53:45 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 15:53:50 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:01:41 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:01:41 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:01:42 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:01:42 INFO  UserServlet:51 - Enter method doGet, ACTION: /favicon.ico
+2019-07-22 16:01:44 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:01:49 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:01:49 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:01:49 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:01:49 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:01:49 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:01:49 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:01:49 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:01:49 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:01:52 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:15:04 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:15:04 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:15:04 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:15:07 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:15:15 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:15:15 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:15:15 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:15:22 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:15:22 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:15:22 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:15:22 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:15:22 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:15:22 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:15:22 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:15:22 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:15:29 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:15:37 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:16:14 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:16:15 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:16:15 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:16:21 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:16:27 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:16:27 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:16:27 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:16:27 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:16:27 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:16:27 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:16:27 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:16:27 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:16:29 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:17:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:17:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:17:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:17:20 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:17:25 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:17:25 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:17:25 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:17:25 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:17:25 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:17:25 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:17:25 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:17:25 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:17:28 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:18:17 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:18:17 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:18:18 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:18:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:18:23 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:18:23 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:18:23 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:18:23 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:18:23 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:18:23 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:18:23 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:18:23 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:18:25 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:19:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:19:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:19:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:19:20 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:19:24 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:19:24 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:19:24 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:19:24 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:19:24 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:19:24 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:19:24 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:19:24 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:19:25 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:20:42 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:20:43 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:20:43 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:20:44 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:20:47 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:20:47 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:20:47 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:20:47 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:20:47 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:20:47 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:20:47 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:20:47 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:20:50 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:21:44 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:21:44 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:21:45 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:21:46 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:21:50 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:21:50 DEBUG UserServlet:136 - Method checkUserByLogin: login:adm 
+2019-07-22 16:21:50 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:21:50 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:21:50 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:21:50 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-22 16:21:50 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-22 16:21:50 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:21:50 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:21:52 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:22:27 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:22:27 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:22:27 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:22:29 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:22:32 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:22:32 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:22:32 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:22:32 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:22:32 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:22:32 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:22:32 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:22:32 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:22:34 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:23:38 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:23:38 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:23:38 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:23:39 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:23:42 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:23:42 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:23:42 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:23:42 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:23:42 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:23:42 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:23:42 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:23:42 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:23:44 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:24:26 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:24:27 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:24:27 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:24:28 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:24:31 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:24:31 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:24:31 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:24:31 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:24:31 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:24:31 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:24:31 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:24:31 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:24:32 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:26:29 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:26:29 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:26:29 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:26:31 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:26:33 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:26:33 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:26:33 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:26:34 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:26:34 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:26:34 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:26:34 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:26:34 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:26:35 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:27:15 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:27:15 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:27:15 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:27:17 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:27:19 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:27:19 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:27:19 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:27:19 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:27:19 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:27:19 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:27:19 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:27:19 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:27:21 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:29:12 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:29:12 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:29:12 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:29:13 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:29:17 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:29:17 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:29:17 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:29:17 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:29:17 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:29:17 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:29:17 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:29:17 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:29:21 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:30:23 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:30:24 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:30:24 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:30:25 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:30:28 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:30:28 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:30:28 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:30:28 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:30:28 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:30:28 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:30:28 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:30:28 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:30:30 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:31:45 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:31:46 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:31:46 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:31:47 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:31:50 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:31:50 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:31:50 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:31:50 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:31:50 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:31:50 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:31:50 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:31:50 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:31:52 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:32:42 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:32:43 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:32:43 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:32:45 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:32:49 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:32:49 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:32:49 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:32:49 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:32:49 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:32:49 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:32:49 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:32:49 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:32:50 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:33:02 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:33:52 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:33:52 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:33:53 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:33:54 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:33:56 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:33:56 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:33:56 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:33:56 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:33:56 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:33:56 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:33:56 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:33:56 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:33:58 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:47:54 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:47:54 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:47:55 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:47:55 INFO  UserServlet:51 - Enter method doGet, ACTION: /favicon.ico
+2019-07-22 16:47:56 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:47:59 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:47:59 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:47:59 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:47:59 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:47:59 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:47:59 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:47:59 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:47:59 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:48:00 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:48:51 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:48:52 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:48:52 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:48:55 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:48:58 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:48:58 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:48:58 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:48:58 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:48:58 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:48:58 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:48:58 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:48:58 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:48:59 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:49:30 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:49:30 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:49:31 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:49:33 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:49:35 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:49:35 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:49:35 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:49:35 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:49:35 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:49:36 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:49:36 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:49:36 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:49:37 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:49:54 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:49:56 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:50:47 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:50:47 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:50:48 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:50:49 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:50:51 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:50:51 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:50:51 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:50:51 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:50:51 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:50:51 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:50:51 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:50:51 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:50:53 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:54:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:54:20 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:54:20 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:54:21 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:54:24 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:54:24 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:54:24 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:54:24 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:54:24 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:54:24 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:54:24 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:54:24 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:54:25 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:56:09 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:56:09 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:56:09 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:56:11 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:56:14 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:56:14 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:56:14 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:56:14 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:56:14 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:56:14 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:56:14 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:56:14 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:56:15 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:56:53 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:56:54 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:56:54 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:56:56 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:56:59 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:56:59 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:56:59 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:56:59 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:56:59 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:56:59 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:56:59 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:56:59 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:57:00 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 16:58:09 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:58:09 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:58:09 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 16:58:12 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 16:58:15 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 16:58:15 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 16:58:15 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 16:58:15 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 16:58:15 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 16:58:15 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 16:58:15 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 16:58:15 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 16:58:17 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:03:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:03:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:03:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:03:21 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:03:23 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:03:23 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:03:23 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:03:23 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:03:23 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:03:23 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:03:23 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:03:23 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:03:25 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:04:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:04:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:04:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:04:20 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:04:23 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:04:23 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:04:23 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:04:23 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:04:23 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:04:23 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:04:23 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:04:23 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:04:25 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:04:48 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:04:49 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:04:49 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:04:50 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:04:54 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:04:54 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:04:54 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:04:54 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:04:54 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:04:54 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:04:54 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:04:54 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:04:55 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:05:41 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:05:41 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:05:42 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:05:43 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:05:46 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:05:46 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:05:46 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:05:46 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:05:46 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:05:46 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:05:46 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:05:46 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:05:48 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:07:20 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:07:21 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:07:21 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:07:22 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:07:25 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:07:25 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:07:25 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:07:25 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:07:25 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:07:25 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:07:25 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:07:25 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:07:26 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:08:25 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:08:26 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:08:26 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:08:27 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:08:30 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:08:30 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:08:30 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:08:30 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:08:30 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:08:30 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:08:30 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:08:30 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:08:31 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:11:53 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:11:54 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:11:54 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:11:55 INFO  UserServlet:33 - Enter doFilter() userName == null
+2019-07-22 17:11:58 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:11:58 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:11:58 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:11:58 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:11:58 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:11:58 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:11:58 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:11:58 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:12:00 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:13:28 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:13:29 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:13:29 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:13:30 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:13:32 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:13:32 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:13:32 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:13:32 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:13:32 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:13:32 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:13:32 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:13:32 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:13:34 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:14:24 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:14:25 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:14:25 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:14:26 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:14:29 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:14:29 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:14:29 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:14:29 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:14:29 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:14:29 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:14:29 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:14:29 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:14:30 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:16:17 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:16:18 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:16:18 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:16:18 INFO  UserServlet:51 - Enter method doGet, ACTION: /favicon.ico
+2019-07-22 17:16:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:16:25 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:16:25 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:16:25 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:16:25 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:16:26 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:16:26 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:16:26 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:16:26 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:16:27 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:16:55 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:16:55 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:16:55 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:19:31 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:19:31 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:19:32 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:19:33 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:19:35 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:19:35 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:19:35 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:19:35 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:19:35 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:19:35 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:19:35 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:19:35 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:19:59 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:20:00 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:20:00 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:20:02 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:20:05 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:20:05 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:20:05 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:20:05 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:20:05 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:20:05 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:20:05 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:20:05 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:21:22 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:21:23 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:21:23 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:21:24 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:21:27 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:21:27 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:21:27 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:21:27 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:21:27 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:21:27 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:21:27 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:21:27 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:21:36 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:23:06 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:23:06 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:23:08 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:23:09 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:23:14 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:23:14 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:23:14 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:23:14 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:23:14 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:23:14 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:23:14 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:23:14 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:23:49 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:23:49 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:23:49 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:23:50 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:23:54 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:23:54 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:23:54 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:23:54 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:23:54 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:23:54 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:23:54 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:23:54 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:25:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:25:19 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:25:20 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:25:21 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:25:24 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:25:24 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:25:24 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:25:24 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:25:24 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:25:24 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:25:24 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:25:24 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:28:40 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:28:41 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:28:41 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:28:41 INFO  UserServlet:51 - Enter method doGet, ACTION: /favicon.ico
+2019-07-22 17:28:47 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:28:50 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:28:50 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:28:50 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:28:50 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:28:50 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:28:50 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:28:50 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:28:50 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:29:45 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:29:45 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:29:46 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:29:47 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:29:49 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:29:49 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:29:49 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:29:49 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:29:49 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:29:49 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:29:49 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:29:49 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:30:21 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:30:21 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:30:22 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:30:23 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:30:27 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:30:27 DEBUG UserServlet:136 - Method checkUserByLogin: login:admin 
+2019-07-22 17:30:27 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:30:27 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:30:27 INFO  UserServlet:145 - Opened session, logged In.
+2019-07-22 17:30:27 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:30:27 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:30:27 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:30:35 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:31:15 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:31:17 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:54:13 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:54:14 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:54:14 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:54:16 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:54:18 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:54:18 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-22 17:54:18 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:54:18 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:54:18 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-22 17:54:18 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:54:18 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:54:18 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:54:20 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:54:20 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-22 17:54:20 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=null
+2019-07-22 17:54:20 INFO  UserDaoimpl:265 - User <null> was found.
+2019-07-22 17:57:54 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:57:55 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:57:55 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:57:56 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:57:58 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:57:58 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-22 17:57:58 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:57:58 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:57:58 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-22 17:57:58 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:57:58 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:57:58 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:58:02 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:58:45 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:58:46 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:58:46 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 17:58:47 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 17:58:50 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 17:58:50 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-22 17:58:50 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 17:58:50 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 17:58:50 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-22 17:58:50 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 17:58:50 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 17:58:50 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 17:58:51 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 17:58:51 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-22 17:58:51 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=null
+2019-07-22 17:58:51 INFO  UserDaoimpl:265 - User <null> was found.
+2019-07-22 18:51:52 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 18:51:52 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 18:51:53 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-22 18:51:53 INFO  UserServlet:51 - Enter method doGet, ACTION: /favicon.ico
+2019-07-22 18:52:07 INFO  UserServlet:33 - Enter doFilter() userName == null
+2019-07-22 18:52:22 INFO  UserServlet:51 - Enter method doGet, ACTION: /registration
+2019-07-22 18:52:39 INFO  UserServlet:27 - Enter method doPost, ACTION: /registration
+2019-07-22 18:52:39 INFO  UserDaoimpl:75 - Enter method findUserByLogin
+2019-07-22 18:52:39 DEBUG UserServlet:107 - Enter method insertUser: login:test  email:test@test 
+2019-07-22 18:52:39 INFO  UserDaoimpl:23 - Enter method insertNewUser
+2019-07-22 18:52:39 INFO  UserDaoimpl:43 - STUDENT  <test> was added.
+2019-07-22 18:52:39 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 18:52:43 INFO  UserServlet:33 - Enter doFilter() userName == null
+2019-07-22 18:52:48 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 18:52:48 DEBUG UserServlet:139 - Method checkUserByLogin: login:test 
+2019-07-22 18:52:48 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 18:52:48 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 18:52:48 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-22 18:52:48 INFO  UserServlet:33 - Enter doFilter() userName == test
+2019-07-22 18:52:48 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=test
+2019-07-22 18:52:48 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 18:52:48 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 18:53:11 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-22 18:53:11 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-22 18:53:11 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=null
+2019-07-22 18:53:11 INFO  UserDaoimpl:265 - User <null> was found.
+2019-07-22 18:53:16 INFO  UserServlet:51 - Enter method doGet, ACTION: /addTeacher
+2019-07-22 18:53:20 INFO  UserServlet:33 - Enter doFilter() userName == test
+2019-07-22 18:53:20 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=test
+2019-07-22 18:53:20 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 18:53:20 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 18:53:26 INFO  UserServlet:27 - Enter method doPost, ACTION: /logout
+2019-07-22 18:53:26 INFO  UserServlet:84 - Enter method logout()
+2019-07-22 18:53:26 INFO  UserServlet:90 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-22 18:53:26 INFO  UserServlet:51 - Enter method doGet, ACTION: /logout
+2019-07-22 18:53:26 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 18:53:32 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 18:53:32 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-22 18:53:32 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 18:53:32 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 18:53:32 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-22 18:53:32 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 18:53:32 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 18:53:32 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 18:53:37 INFO  UserServlet:51 - Enter method doGet, ACTION: /accounts
+2019-07-22 18:53:37 INFO  UserServlet:187 - Enter method listAccounts()
+2019-07-22 18:53:37 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-22 18:53:37 INFO  UserDaoimpl:159 - Number of accounts: 7
+2019-07-22 18:53:59 INFO  UserServlet:27 - Enter method doPost, ACTION: /onOffAccount
+2019-07-22 18:53:59 INFO  UserServlet:201 - Enter method changeAccountStatus(). Param: id=7;
+2019-07-22 18:53:59 INFO  UserDaoimpl:165 - Enter method getUserById() ID=7
+2019-07-22 18:53:59 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-22 18:53:59 INFO  UserDaoimpl:208 - User <test> was updated.
+2019-07-22 18:53:59 INFO  UserServlet:51 - Enter method doGet, ACTION: /accounts
+2019-07-22 18:53:59 INFO  UserServlet:187 - Enter method listAccounts()
+2019-07-22 18:53:59 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-22 18:53:59 INFO  UserDaoimpl:159 - Number of accounts: 7
+2019-07-22 18:54:03 INFO  UserServlet:27 - Enter method doPost, ACTION: /logout
+2019-07-22 18:54:03 INFO  UserServlet:84 - Enter method logout()
+2019-07-22 18:54:03 INFO  UserServlet:90 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-22 18:54:03 INFO  UserServlet:51 - Enter method doGet, ACTION: /logout
+2019-07-22 18:54:03 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 18:54:07 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 18:54:07 DEBUG UserServlet:139 - Method checkUserByLogin: login:test 
+2019-07-22 18:54:07 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 18:54:07 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 18:54:07 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-22 18:54:07 INFO  UserServlet:33 - Enter doFilter() userName == test
+2019-07-22 18:54:07 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=test
+2019-07-22 18:54:14 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 18:54:14 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-22 18:54:14 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 18:54:14 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 18:54:14 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-22 18:54:14 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 18:54:14 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 18:54:14 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 18:54:16 INFO  UserServlet:51 - Enter method doGet, ACTION: /accounts
+2019-07-22 18:54:16 INFO  UserServlet:187 - Enter method listAccounts()
+2019-07-22 18:54:16 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-22 18:54:16 INFO  UserDaoimpl:159 - Number of accounts: 7
+2019-07-22 18:54:18 INFO  UserServlet:27 - Enter method doPost, ACTION: /onOffAccount
+2019-07-22 18:54:18 INFO  UserServlet:201 - Enter method changeAccountStatus(). Param: id=7;
+2019-07-22 18:54:18 INFO  UserDaoimpl:165 - Enter method getUserById() ID=7
+2019-07-22 18:54:18 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-22 18:54:18 INFO  UserDaoimpl:208 - User <test> was updated.
+2019-07-22 18:54:18 INFO  UserServlet:51 - Enter method doGet, ACTION: /accounts
+2019-07-22 18:54:18 INFO  UserServlet:187 - Enter method listAccounts()
+2019-07-22 18:54:18 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-22 18:54:18 INFO  UserDaoimpl:159 - Number of accounts: 7
+2019-07-22 18:54:22 INFO  UserServlet:27 - Enter method doPost, ACTION: /logout
+2019-07-22 18:54:22 INFO  UserServlet:84 - Enter method logout()
+2019-07-22 18:54:22 INFO  UserServlet:90 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-22 18:54:22 INFO  UserServlet:51 - Enter method doGet, ACTION: /logout
+2019-07-22 18:54:23 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 18:54:28 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 18:54:28 DEBUG UserServlet:139 - Method checkUserByLogin: login:test 
+2019-07-22 18:54:28 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 18:54:28 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 18:54:28 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-22 18:54:28 INFO  UserServlet:33 - Enter doFilter() userName == test
+2019-07-22 18:54:28 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=test
+2019-07-22 18:54:28 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 18:54:28 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 18:54:42 INFO  UserServlet:51 - Enter method doGet, ACTION: /addTeacher
+2019-07-22 19:02:34 INFO  UserServlet:27 - Enter method doPost, ACTION: /logout
+2019-07-22 19:02:34 INFO  UserServlet:84 - Enter method logout()
+2019-07-22 19:02:34 INFO  UserServlet:90 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-22 19:02:34 INFO  UserServlet:51 - Enter method doGet, ACTION: /logout
+2019-07-22 19:02:34 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-22 19:02:38 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-22 19:02:38 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-22 19:02:38 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-22 19:02:38 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-22 19:02:38 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-22 19:02:38 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-22 19:02:38 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-22 19:02:38 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-22 19:03:00 INFO  UserServlet:51 - Enter method doGet, ACTION: /accounts
+2019-07-22 19:03:00 INFO  UserServlet:187 - Enter method listAccounts()
+2019-07-22 19:03:00 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-22 19:03:00 INFO  UserDaoimpl:159 - Number of accounts: 7
+2019-07-23 10:56:08 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 10:56:11 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 10:56:14 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 10:56:14 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 10:56:14 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 10:56:14 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 10:56:14 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-23 10:56:14 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 10:56:14 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 10:56:14 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 10:56:16 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 10:56:16 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-23 10:56:16 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=null
+2019-07-23 10:56:16 INFO  UserDaoimpl:265 - User <null> was found.
+2019-07-23 10:58:29 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 10:58:30 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 10:58:32 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 10:58:33 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 10:58:38 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 10:58:38 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 10:58:38 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 10:58:38 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 10:58:38 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-23 10:58:38 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 10:58:38 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 10:58:38 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 10:58:39 INFO  UserServlet:51 - Enter method doGet, ACTION: /addTeacher
+2019-07-23 10:58:42 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 10:58:42 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-23 10:58:42 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 10:58:42 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:02:58 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:02:58 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:02:58 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:03:01 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 11:03:07 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:03:07 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 11:03:07 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:03:07 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:03:07 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-23 11:03:07 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 11:03:07 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:03:07 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:03:09 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 11:03:09 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-23 11:03:09 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:03:09 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:04:27 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:04:27 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:04:27 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:04:29 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 11:04:34 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:04:34 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 11:04:34 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:04:34 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:04:34 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-23 11:04:34 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 11:04:34 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:04:34 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:04:36 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 11:04:36 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-23 11:04:36 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:04:36 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:07:37 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:07:37 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:07:37 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:07:39 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 11:07:42 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:07:42 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 11:07:42 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:07:42 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:07:42 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-23 11:07:42 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 11:07:42 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:07:42 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:07:43 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 11:07:44 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-23 11:07:44 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:07:44 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:08:11 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:08:11 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:08:12 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:08:13 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 11:08:16 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:08:16 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 11:08:16 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:08:16 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:08:16 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-23 11:08:16 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 11:08:16 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:08:16 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:08:17 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 11:08:17 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-23 11:08:17 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:08:17 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:09:56 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:09:57 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:09:57 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:09:59 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 11:10:02 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:10:02 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 11:10:02 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:10:02 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:10:02 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-23 11:10:02 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 11:10:02 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:10:02 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:10:03 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 11:10:03 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-23 11:10:03 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:10:03 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:13:44 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:13:45 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:13:45 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:14:11 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:14:11 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:14:12 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:14:13 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 11:14:15 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:14:15 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 11:14:15 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:14:16 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:14:16 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-23 11:14:16 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 11:14:16 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:14:16 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:14:17 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 11:14:17 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-23 11:14:17 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:14:17 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:14:44 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:14:45 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:14:45 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:14:48 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 11:14:52 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:14:52 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 11:14:52 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:14:53 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:14:53 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-23 11:14:53 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 11:14:53 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:14:53 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:14:55 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 11:14:55 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-23 11:14:55 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:14:55 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:16:01 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:16:02 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:16:02 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:16:03 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 11:16:06 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:16:06 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 11:16:06 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:16:06 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:16:06 INFO  UserServlet:148 - Opened session, logged In.
+2019-07-23 11:16:06 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 11:16:06 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:16:06 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:16:08 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 11:16:08 INFO  UserServlet:221 - Enter method getUserByLogin()
+2019-07-23 11:16:08 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:16:08 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:19:59 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:19:59 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:20:00 INFO  UserServlet:51 - Enter method doGet, ACTION: /
+2019-07-23 11:20:02 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 11:20:04 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:20:04 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-23 11:20:04 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:20:04 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:20:04 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:20:04 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:20:04 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:20:04 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:20:04 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-23 11:20:04 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 11:20:04 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:20:04 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:20:06 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 11:20:06 INFO  UserServlet:223 - Enter method getUserByLogin()
+2019-07-23 11:35:32 INFO  UserServlet:27 - Enter method doPost, ACTION: /logout
+2019-07-23 11:35:32 INFO  UserServlet:84 - Enter method logout()
+2019-07-23 11:35:32 INFO  UserServlet:90 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-23 11:35:32 INFO  UserServlet:51 - Enter method doGet, ACTION: /logout
+2019-07-23 11:35:32 INFO  UserServlet:51 - Enter method doGet, ACTION: /login
+2019-07-23 11:35:35 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:35:35 DEBUG UserServlet:139 - Method checkUserByLogin: login:adm 
+2019-07-23 11:35:35 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:35:35 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:35:35 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:35:35 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:35:35 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:35:35 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:35:35 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-23 11:35:35 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 11:35:35 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 11:35:35 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:35:35 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:35:36 INFO  UserServlet:51 - Enter method doGet, ACTION: /profile
+2019-07-23 11:35:36 INFO  UserServlet:223 - Enter method getUserByLogin()
+2019-07-23 11:35:50 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 11:46:02 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:46:02 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:46:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:46:04 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 11:46:07 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:46:07 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 11:46:07 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:46:07 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:46:07 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:46:07 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:46:07 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:46:07 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:46:07 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 11:46:07 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 11:46:07 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 11:46:07 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:46:07 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:46:09 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 11:46:09 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 11:46:14 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 11:46:14 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 11:46:14 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:46:15 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:49:17 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:49:18 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:49:18 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:49:20 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 11:49:23 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:49:23 DEBUG UserServlet:145 - Method checkUserByLogin: login:admin 
+2019-07-23 11:49:23 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:49:23 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:49:23 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:49:23 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:49:23 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:49:23 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:49:23 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 11:49:23 INFO  UserServlet:33 - Enter doFilter() userName == admin
+2019-07-23 11:49:23 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:49:23 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:49:25 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 11:49:25 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 11:49:30 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 11:49:30 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 11:49:30 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-23 11:49:30 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-23 11:51:28 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:51:29 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:51:29 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:51:31 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 11:51:34 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:51:34 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 11:51:34 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:51:34 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:51:34 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:51:34 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:51:34 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:51:34 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:51:34 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 11:51:34 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 11:51:34 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 11:51:34 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:51:34 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:51:36 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 11:51:36 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 11:51:40 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 11:51:40 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 11:51:40 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:51:40 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:55:18 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:55:19 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:55:19 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:55:21 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 11:55:23 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:55:23 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 11:55:23 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:55:23 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:55:23 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:55:23 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:55:23 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:55:23 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:55:23 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 11:55:23 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 11:55:23 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 11:55:23 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:55:23 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:55:25 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 11:55:25 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 11:55:29 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 11:55:29 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 11:55:29 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:55:29 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:57:04 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:57:05 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:57:05 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:57:07 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 11:57:10 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:57:10 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 11:57:10 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:57:10 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:57:10 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:57:10 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:57:10 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:57:10 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:57:10 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 11:57:10 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 11:57:10 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 11:57:10 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:57:10 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:57:12 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 11:57:12 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 11:57:17 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 11:57:17 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 11:57:17 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:57:17 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:58:18 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:58:19 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:58:19 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 11:58:21 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 11:58:24 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 11:58:24 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 11:58:24 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 11:58:24 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 11:58:24 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:58:24 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:58:24 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:58:24 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:58:24 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 11:58:24 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 11:58:24 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 11:58:24 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 11:58:24 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 11:58:25 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 11:58:26 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 11:58:29 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 11:58:29 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 11:58:29 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 11:58:29 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 11:58:29 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 11:58:29 ERROR UserDaoimpl:213 - Column 'login' cannot be null
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'login' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5098)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at dao.impl.UserDaoimpl.updateUser(UserDaoimpl.java:206)
+	at service.impl.UserServiceImpl.editUser(UserServiceImpl.java:52)
+	at servlets.UserServlet.updateUser(UserServlet.java:258)
+	at servlets.UserServlet.doPost(UserServlet.java:45)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-23 11:58:29 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 11:58:29 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 12:22:07 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 12:22:07 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 12:22:07 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 12:22:07 INFO  UserServlet:57 - Enter method doGet, ACTION: /favicon.ico
+2019-07-23 12:22:11 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 12:22:11 INFO  UserServlet:57 - Enter method doGet, ACTION: /favicon.ico
+2019-07-23 12:22:19 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 12:22:19 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 12:22:19 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 12:22:19 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 12:22:19 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 12:22:19 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 12:22:19 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 12:22:19 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 12:22:19 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 12:22:19 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 12:22:19 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 12:22:19 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 12:22:19 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 12:22:23 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 12:22:23 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 12:30:00 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-23 12:30:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-23 12:30:23 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 12:30:23 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 12:30:24 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 12:30:27 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 12:30:32 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 12:30:32 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 12:30:32 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 12:30:32 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 12:30:32 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 12:30:32 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 12:30:32 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 12:30:32 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 12:30:32 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 12:30:32 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 12:30:32 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 12:30:32 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 12:30:32 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 12:30:34 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 12:30:34 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 12:30:43 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 12:30:43 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 12:30:43 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 12:30:43 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 12:30:43 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 12:30:43 ERROR UserDaoimpl:213 - Column 'login' cannot be null
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'login' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5098)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at dao.impl.UserDaoimpl.updateUser(UserDaoimpl.java:206)
+	at service.impl.UserServiceImpl.editUser(UserServiceImpl.java:52)
+	at servlets.UserServlet.updateUser(UserServlet.java:258)
+	at servlets.UserServlet.doPost(UserServlet.java:45)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-23 12:30:43 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 12:30:43 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 12:39:42 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 12:39:43 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 12:39:43 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 12:39:45 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 12:39:54 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 12:39:54 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 12:39:54 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 12:39:54 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 12:39:54 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 12:39:54 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 12:39:54 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 12:39:54 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 12:39:54 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 12:39:54 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 12:39:54 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 12:39:54 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 12:39:54 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 12:39:56 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 12:39:56 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:00:23 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:00:24 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:00:24 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:00:24 INFO  UserServlet:57 - Enter method doGet, ACTION: /favicon.ico
+2019-07-23 13:01:33 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:01:33 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:01:34 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:01:34 INFO  UserServlet:57 - Enter method doGet, ACTION: /favicon.ico
+2019-07-23 13:01:35 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:01:37 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:01:37 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 13:01:37 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:01:37 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:01:37 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:01:37 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:01:37 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:01:38 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:01:38 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:01:38 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:01:38 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:01:38 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:01:38 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:01:39 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:01:39 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:02:00 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:02:00 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:02:00 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:02:00 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:02:00 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:02:00 ERROR UserDaoimpl:213 - Column 'login' cannot be null
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'login' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5098)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at dao.impl.UserDaoimpl.updateUser(UserDaoimpl.java:206)
+	at service.impl.UserServiceImpl.editUser(UserServiceImpl.java:52)
+	at servlets.UserServlet.updateUser(UserServlet.java:258)
+	at servlets.UserServlet.doPost(UserServlet.java:45)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-23 13:02:00 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:02:00 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:04:29 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:04:30 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:04:30 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:04:31 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:04:34 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:04:34 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 13:04:34 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:04:34 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:04:34 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:04:34 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:04:34 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:04:34 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:04:34 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:04:34 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:04:34 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:04:34 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:04:34 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:04:37 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:04:37 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:04:48 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:04:48 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:04:48 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:04:48 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:04:48 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:04:48 ERROR UserDaoimpl:213 - Column 'login' cannot be null
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'login' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5098)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at dao.impl.UserDaoimpl.updateUser(UserDaoimpl.java:206)
+	at service.impl.UserServiceImpl.editUser(UserServiceImpl.java:52)
+	at servlets.UserServlet.updateUser(UserServlet.java:258)
+	at servlets.UserServlet.doPost(UserServlet.java:45)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-23 13:04:48 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:04:48 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:11:24 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:11:25 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:11:25 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:11:26 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:11:29 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:11:29 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 13:11:29 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:11:29 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:11:29 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:11:29 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:11:29 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:11:29 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:11:29 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:11:29 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:11:29 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:11:29 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:11:29 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:11:31 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:11:31 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:11:40 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:11:40 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:11:40 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:11:40 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:11:40 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:11:40 INFO  UserDaoimpl:208 - User <a> was updated.
+2019-07-23 13:11:40 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:11:40 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:14:01 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:14:01 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:14:02 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:14:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:14:05 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:14:05 DEBUG UserServlet:145 - Method checkUserByLogin: login:a 
+2019-07-23 13:14:05 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:14:05 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:14:05 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=a
+2019-07-23 13:14:05 INFO  UserDaoimpl:265 - User <a> was found.
+2019-07-23 13:14:05 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=a
+2019-07-23 13:14:05 INFO  UserDaoimpl:265 - User <a> was found.
+2019-07-23 13:14:05 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:14:05 INFO  UserServlet:33 - Enter doFilter() userName == a
+2019-07-23 13:14:05 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=a
+2019-07-23 13:14:05 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:14:05 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:14:07 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:14:07 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:14:19 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:14:19 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:14:19 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=a
+2019-07-23 13:14:19 INFO  UserDaoimpl:265 - User <a> was found.
+2019-07-23 13:14:19 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:14:19 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-23 13:14:19 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:14:19 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:17:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:17:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:17:03 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:17:05 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:17:07 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:17:07 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 13:17:07 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:17:07 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:17:07 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:17:07 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:17:07 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:17:07 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:17:07 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:17:07 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:17:07 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:17:07 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:17:07 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:17:09 INFO  UserServlet:57 - Enter method doGet, ACTION: /addTeacher
+2019-07-23 13:17:11 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:17:11 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:17:20 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:17:20 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:17:20 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:17:20 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:17:20 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:17:20 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-23 13:17:20 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:17:20 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:20:48 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:20:48 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:20:49 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:20:50 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:20:53 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:20:53 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 13:20:53 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:20:53 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:20:53 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:20:53 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:20:53 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:20:53 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:20:53 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:20:53 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:20:53 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:20:53 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:20:53 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:20:55 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:20:55 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:21:01 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:21:01 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:21:01 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:21:01 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:21:01 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:21:01 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-23 13:21:01 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:21:01 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:21:26 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:21:26 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:21:26 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:21:28 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:21:30 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:21:30 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 13:21:30 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:21:30 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:21:30 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:21:30 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:21:30 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:21:30 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:21:30 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:21:30 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:21:30 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:21:30 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:21:30 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:21:31 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:21:32 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:21:36 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:21:36 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:21:36 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:21:36 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:21:36 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:21:36 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-23 13:21:36 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:21:36 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:22:46 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:22:46 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:22:47 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:22:48 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:22:50 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:22:50 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 13:22:50 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:22:50 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:22:50 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:22:50 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:22:50 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:22:50 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:22:50 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:22:50 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:22:50 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:22:50 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:22:50 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:22:51 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:22:52 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:22:56 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:22:56 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:22:56 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:22:56 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:22:56 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:22:56 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-23 13:22:56 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:22:56 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:23:01 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:23:01 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:23:01 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:23:01 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:23:01 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:23:01 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-23 13:23:01 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:23:01 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:23:19 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:23:19 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:23:19 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:23:19 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:24:12 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:24:13 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:24:13 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:24:14 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:24:16 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:24:16 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 13:24:16 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:24:16 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:24:16 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:24:16 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:24:16 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:24:16 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:24:16 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:24:16 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:24:16 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:24:17 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:24:17 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:24:18 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:24:18 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:24:21 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:24:21 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:24:21 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:24:21 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:24:21 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:24:21 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-23 13:24:22 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:24:22 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:26:14 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:26:15 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:26:15 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:26:16 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:26:19 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:26:19 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 13:26:19 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:26:19 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:26:19 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:26:19 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:26:19 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:26:19 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:26:19 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:26:19 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:26:19 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:26:19 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:26:19 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:26:21 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:26:21 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:26:26 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:26:26 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:26:26 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:26:26 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:26:26 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:26:26 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-23 13:26:26 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:26:26 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:28:20 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:28:20 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:28:21 INFO  UserServlet:57 - Enter method doGet, ACTION: /
+2019-07-23 13:28:22 INFO  UserServlet:57 - Enter method doGet, ACTION: /login
+2019-07-23 13:28:25 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-23 13:28:25 DEBUG UserServlet:145 - Method checkUserByLogin: login:adm 
+2019-07-23 13:28:25 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-23 13:28:25 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-23 13:28:25 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:28:25 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:28:25 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:28:25 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:28:25 INFO  UserServlet:156 - Opened session, logged In.
+2019-07-23 13:28:25 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:28:25 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:28:25 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:28:25 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-23 13:28:27 INFO  UserServlet:57 - Enter method doGet, ACTION: /profile
+2019-07-23 13:28:27 INFO  UserServlet:229 - Enter method getUserByLogin()
+2019-07-23 13:28:30 INFO  UserServlet:27 - Enter method doPost, ACTION: /profile
+2019-07-23 13:28:30 INFO  UserServlet:242 - Enter method updateUser()
+2019-07-23 13:28:30 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-23 13:28:30 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-23 13:28:30 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-23 13:28:30 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-23 13:28:30 INFO  UserServlet:33 - Enter doFilter() userName == adm
+2019-07-23 13:28:30 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-23 13:28:30 DEBUG CoursesServlet:27 - Enter method doGet(). Action:/coursesList
+2019-07-23 13:28:30 INFO  CoursesDaoImpl:21 - Enter method listAllCourses

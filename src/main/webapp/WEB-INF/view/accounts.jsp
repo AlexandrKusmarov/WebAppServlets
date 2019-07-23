@@ -18,9 +18,7 @@
     </thead>
     <tbody>
     <c:forEach var="account" items="${accounts}">
-
         <tr>
-
             <td><c:out value="${account.login}"/></td>
             <td><c:out value="${account.role}"/></td>
 
@@ -47,7 +45,6 @@
                     </form>
                 </c:when>
             </c:choose>
-
         </tr>
     </c:forEach>
     </tbody>
