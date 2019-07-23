@@ -45,10 +45,7 @@ public class UserServlet extends HttpServlet {
                 updateUser(request, response);
                 break;
         }
-
     }
-
-
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -77,14 +74,11 @@ public class UserServlet extends HttpServlet {
                 break;
             case "/profile":
                 request.getRequestDispatcher("WEB-INF/view/profile.jsp").forward(request, response);
-                getUserByLogin(request,response);
                 break;
             default:
                 response.sendRedirect("error");
         }
     }
-
-
 
     private void logout(HttpServletRequest request, HttpServletResponse response) {
         logger.info("Enter method logout()");
@@ -260,5 +254,4 @@ public class UserServlet extends HttpServlet {
             logger.error(e.getMessage(), e);
         }
     }
-
 }

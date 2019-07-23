@@ -22,6 +22,15 @@ public class Courses {
         this.price = price;
     }
 
+    public Courses(Long idCourses, String theme, String nameOfCourses, Date startOfCourses, Date endOfCourses, Integer price) {
+        this.idCourses = idCourses;
+        this.theme = theme;
+        this.nameOfCourses = nameOfCourses;
+        this.startOfCourses = startOfCourses;
+        this.endOfCourses = endOfCourses;
+        this.price = price;
+    }
+
     public Integer getPrice() {
         return price;
     }

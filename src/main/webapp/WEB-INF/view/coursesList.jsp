@@ -26,6 +26,16 @@
             <td><c:out value="${course.startOfCourses}"/></td>
             <td><c:out value="${course.endOfCourses}"/></td>
             <td><c:out value="${course.price}"/></td>
+            <td>
+                <form action="deleteCourses" method="post">
+                    <button style="background-color: #db5564" type="submit"
+                            name="idCourses" value="${course.idCourses}">Delete
+                    </button>
+                </form>
+            </td>
+            <td>
+                <a href="Update">Update</a>
+            </td>
         </tr>
     </c:forEach>
     </tbody>

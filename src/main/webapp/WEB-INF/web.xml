@@ -40,6 +40,23 @@
         <url-pattern>/coursesList</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>addCourses</servlet-name>
+        <servlet-class>servlets.CoursesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addCourses</servlet-name>
+        <url-pattern>/addCourses</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteCourses</servlet-name>
+        <servlet-class>servlets.CoursesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCourses</servlet-name>
+        <url-pattern>/deleteCourses</url-pattern>
+    </servlet-mapping>
+
 
 
     <!--Exception servlet-->

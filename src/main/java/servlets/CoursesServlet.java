@@ -31,10 +31,28 @@ public class CoursesServlet extends HttpServlet {
                 case "/coursesList" :
                     listCourses(req,resp);
                     break;
+                case "/addCourses" :
+                    req.getRequestDispatcher("WEB-INF/view/addCourses.jsp").forward(req,resp);
+                    break;
             }
         } catch (SQLException e){
             e.printStackTrace();
         }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String action = req.getServletPath();
+        logger.debug("Enter method doPost(). Action:{}", action);
+
+            switch (action) {
+                case "/addCourses" :
+                    createCourse(req,resp);
+                    break;
+                case "/deleteCourses" :
+                    deleteCourse(req,resp);
+                    break;
+            }
     }
 
     private void listCourses (HttpServletRequest request, HttpServletResponse response)
@@ -47,4 +65,37 @@ public class CoursesServlet extends HttpServlet {
             dispatcher.forward(request, response);
         }
 
+    private void createCourse(HttpServletRequest req, HttpServletResponse resp) {
+        logger.info("Enter method createCourse()");
+        String theme = req.getParameter("theme");
+        String courseName = req.getParameter("courseName");
+        String courseStart = req.getParameter("courseStart");
+        String courseEnd = req.getParameter("courseEnd");
+        Integer price = Integer.parseInt(req.getParameter("coursePrice"));
+
+        logger.debug("Enter method insertCourse. Params: theme - {}," +
+                        " courseName - {}, startCourse - {}, endCourse - {}, price - {}",
+                theme, courseName, courseStart, courseEnd, price);
+
+        try {
+            if(coursesService.createCourse(theme, courseName, java.sql.Date.valueOf(courseStart), java.sql.Date.valueOf(courseEnd), price)){
+                resp.sendRedirect("coursesList");
+            }
+            else resp.sendRedirect("addCourses");
+        } catch (SQLException | IOException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(),e);
+        }
+    }
+
+    private void deleteCourse(HttpServletRequest req, HttpServletResponse resp) {
+        logger.info("Enter method deleteCourse()");
+        Long id = Long.parseLong(req.getParameter("idCourses"));
+        try {
+            coursesService.deleteCourse(id);
+            resp.sendRedirect("coursesList");
+        } catch (SQLException | IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
