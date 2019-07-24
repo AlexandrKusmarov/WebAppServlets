@@ -7,7 +7,8 @@
     </div>
     <div class="form-group">
         <label for="email">Email address</label>
-        <input type="email" class="form-control" name="email" id="email" required aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="email" class="form-control" name="email" id="email" required aria-describedby="emailHelp"
+               placeholder="Enter email">
     </div>
     <div class="form-group">
         <label for="password">Password</label>

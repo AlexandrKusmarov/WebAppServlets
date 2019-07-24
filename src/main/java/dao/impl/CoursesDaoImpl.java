@@ -117,4 +117,30 @@ public class CoursesDaoImpl implements CoursesDao {
             else logger.error("Course with id <{}> was NOT deleted", id);
         }
     }
+
+    @Override
+    public void updateCourse(Long id, String theme, String courseName, Date courseStart, Date courseEnd, Integer price) throws SQLException {
+        logger.debug("Enter method updateCourse().Params: " +
+                        "idCourse={}, theme={}, courseName={}, courseStart={}, courseEnd={}, price={}",
+                id, theme, courseName, courseStart, courseEnd, price);
+
+        String sql = "UPDATE courses SET " +
+                "theme=?, nameOfCourses=?, startOfCourses=?, endOfCourses=?, price=? " +
+                "WHERE idCourses=?";
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+
+            ps.setString(1, theme);
+            ps.setString(2, courseName);
+            ps.setDate(3, (java.sql.Date) courseStart);
+            ps.setDate(4, (java.sql.Date) courseEnd);
+            ps.setInt(5, price);
+            ps.setLong(6, id);
+
+            if(ps.executeUpdate() > 0){
+                logger.debug("Course with id <{}> was updated", id);
+            }
+            else logger.error("Course with id <{}> was NOT updated", id);
+        }
+    }
 }

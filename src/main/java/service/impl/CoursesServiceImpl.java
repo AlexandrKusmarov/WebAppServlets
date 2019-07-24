@@ -29,4 +29,9 @@ public class CoursesServiceImpl implements CoursesService {
     public void deleteCourse(Long id) throws SQLException {
         coursesDaoImpl.removeCourseById(id);
     }
+
+    @Override
+    public void updateCourse(Long id, String theme, String courseName, Date courseStart, Date courseEnd, Integer price) throws SQLException {
+        coursesDaoImpl.updateCourse(id, theme, courseName, courseStart, courseEnd, price);
+    }
 }

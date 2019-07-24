@@ -6,12 +6,12 @@
 
 <table class="table">
     <thead>
-        <tr>
-            <th>Theme</th>
-            <th>Course name</th>
-            <th>Start date</th>
-            <th>End date</th>
-        </tr>
+    <tr>
+        <th>Theme</th>
+        <th>Course name</th>
+        <th>Start date</th>
+        <th>End date</th>
+    </tr>
     </thead>
     <tbody>
     <tr>

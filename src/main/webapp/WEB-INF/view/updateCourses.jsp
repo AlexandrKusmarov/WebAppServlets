@@ -1,34 +1,33 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-
+    <jsp:include page="../static/navbar.jsp"/>
 </head>
 <body>
 <div class="container col-md-6">
-    <form action="updateCourses" method="post">
+    <form action="updateCourses?id=${id}" method="post">
         <div class="form-group">
             <label for="theme">Theme</label>
-            <input type="text" id="theme" class="form-control" required name="theme">
+            <input type="text" id="theme" class="form-control" value="${theme}" required name="theme">
         </div>
         <div class="form-group">
             <label for="courseName">Name of course</label>
-            <input type="text" id="courseName" class="form-control" required name="courseName">
+            <input type="text" id="courseName" class="form-control" value="${courseName}" required name="courseName">
         </div>
         <div class="form-group">
             <label for="courseStart">Course begin</label>
-            <input type="date" id="courseStart" class="form-control" name="courseStart" required>
+            <input type="date" id="courseStart" class="form-control" value="${courseStart}" name="courseStart" required>
         </div>
         <div class="form-group">
             <label for="courseEnd">Course end</label>
-            <input type="date" id="courseEnd" class="form-control" name="courseEnd" required>
+            <input type="date" id="courseEnd" class="form-control" value="${courseEnd}" name="courseEnd" required>
         </div>
         <div class="form-group">
-            <label for="coursePrice">Price</label>
-            <input type="number" id="coursePrice" class="form-control" name="coursePrice" required>
+            <label for="price">Price</label>
+            <input type="number" id="price" class="form-control" value="${price}" name="price" required>
         </div>
         <div>
-            <button class="btn btn-primary" type="submit">Create</button>
+            <button class="btn btn-primary" type="submit">Save</button>
         </div>
     </form>
 </div>

@@ -10,8 +10,7 @@ public interface CoursesService {
 
     List<Courses> getAllCourses() throws SQLException;
     Courses getCourseById(Long idCourse) throws SQLException;
-
     boolean createCourse(String theme, String courseName, Date courseStart, Date courseEnd, Integer price) throws SQLException;
-
     void deleteCourse(Long id) throws SQLException;
+    void updateCourse(Long id, String theme, String courseName, Date courseStart, Date courseEnd, Integer price) throws SQLException;
 }

@@ -16,9 +16,6 @@
     </tr>
     </thead>
     <tbody>
-    <div>
-        <span style="color: maroon">${updated}</span>
-    </div>
     <c:forEach var="course" items="${coursesList}">
         <tr>
             <td><c:out value="${course.theme}"/></td>
@@ -26,16 +23,24 @@
             <td><c:out value="${course.startOfCourses}"/></td>
             <td><c:out value="${course.endOfCourses}"/></td>
             <td><c:out value="${course.price}"/></td>
-            <td>
-                <form action="deleteCourses" method="post">
-                    <button style="background-color: #db5564" type="submit"
-                            name="idCourses" value="${course.idCourses}">Delete
-                    </button>
-                </form>
-            </td>
-            <td>
-                <a href="Update">Update</a>
-            </td>
+            <c:choose>
+                <c:when test="${role  == \"ADMIN\"}">
+                    <td>
+                        <form action="updateCourses?id=<c:out value='${course.idCourses}' />">
+                            <button style="background-color: #8ddb99" type="submit"
+                                    name="id" value="${course.idCourses}">Update
+                            </button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="deleteCourses" method="post">
+                            <button style="background-color: #db5564" type="submit"
+                                    name="idCourses" value="${course.idCourses}">Delete
+                            </button>
+                        </form>
+                    </td>
+                </c:when>
+            </c:choose>
         </tr>
     </c:forEach>
     </tbody>

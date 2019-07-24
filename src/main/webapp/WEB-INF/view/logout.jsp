@@ -4,8 +4,8 @@
     <title>Title</title>
 </head>
 <body>
-    <%
-        response.sendRedirect("login");
-    %>
+<%
+    response.sendRedirect("login");
+%>
 </body>
 </html>

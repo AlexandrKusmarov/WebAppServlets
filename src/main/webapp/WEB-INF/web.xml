@@ -48,6 +48,7 @@
         <servlet-name>addCourses</servlet-name>
         <url-pattern>/addCourses</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>DeleteCourses</servlet-name>
         <servlet-class>servlets.CoursesServlet</servlet-class>
@@ -57,6 +58,14 @@
         <url-pattern>/deleteCourses</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>UpdateCourses</servlet-name>
+        <servlet-class>servlets.CoursesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCourses</servlet-name>
+        <url-pattern>/updateCourses</url-pattern>
+    </servlet-mapping>
 
 
     <!--Exception servlet-->
