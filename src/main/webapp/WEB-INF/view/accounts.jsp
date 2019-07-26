@@ -10,7 +10,7 @@
     <tr>
         <th>Login</th>
         <th>Role</th>
-        <th>Account activity</th>
+        <th>Account action</th>
     </tr>
     </thead>
     <tbody>
@@ -41,6 +41,15 @@
                         </c:choose>
                     </form>
                 </c:when>
+
+                <c:when test="${account.role == ('TEACHER')}">
+                    <form action="assignCourses?idUser=${account.idUser}">
+                        <td>
+                            <button name="idUser" value="${account.idUser}" style="background-color: skyblue" type="submit">Assign course</button>
+                        </td>
+                    </form>
+                </c:when>
+
             </c:choose>
         </tr>
     </c:forEach>

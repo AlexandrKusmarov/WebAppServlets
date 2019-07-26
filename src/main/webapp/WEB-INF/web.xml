@@ -66,6 +66,14 @@
         <servlet-name>UpdateCourses</servlet-name>
         <url-pattern>/updateCourses</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>AssignCourses</servlet-name>
+        <servlet-class>servlets.CoursesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AssignCourses</servlet-name>
+        <url-pattern>/assignCourses</url-pattern>
+    </servlet-mapping>
 
 
     <!--Exception servlet-->

@@ -1,10 +1,8 @@
 package servlets.filters;
 
 import model.Role;
-import model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import service.UserService;
 import service.impl.UserServiceImpl;
 import servlets.UserServlet;
 
@@ -17,7 +15,7 @@ import java.sql.SQLException;
 public class AuthorizationFilter implements Filter {
 
     private static Logger logger = LoggerFactory.getLogger(UserServlet.class);
-    UserServiceImpl userService = new UserServiceImpl();
+    private UserServiceImpl userService = new UserServiceImpl();
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

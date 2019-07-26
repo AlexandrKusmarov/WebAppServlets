@@ -1,11 +1,12 @@
 package servlets;
 
 import model.Courses;
+import model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import service.impl.CoursesServiceImpl;
+import service.impl.UserServiceImpl;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,6 +19,7 @@ public class CoursesServlet extends HttpServlet {
 
     private static Logger logger = LoggerFactory.getLogger(CoursesServlet.class);
     private CoursesServiceImpl coursesService = new CoursesServiceImpl();
+    private UserServiceImpl userService = new UserServiceImpl();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -26,10 +28,10 @@ public class CoursesServlet extends HttpServlet {
         String action = req.getServletPath();
         logger.debug("Enter method doGet(). Action:{}", action);
 
-        try {
             switch (action) {
                 case "/coursesList":
                     listCourses(req, resp);
+                    req.getRequestDispatcher("WEB-INF/view/coursesList.jsp").forward(req,resp);
                     break;
                 case "/addCourses":
                     req.getRequestDispatcher("WEB-INF/view/addCourses.jsp").forward(req, resp);
@@ -38,15 +40,16 @@ public class CoursesServlet extends HttpServlet {
                     bindParamsOfCurrentCourse(req, resp);
                     req.getRequestDispatcher("WEB-INF/view/updateCourses.jsp").forward(req, resp);
                     break;
+                case "/assignCourses":
+                    listCourses(req, resp);
+                    getTeacherName(req,resp);
+                    req.getRequestDispatcher("WEB-INF/view/assignCourses.jsp").forward(req, resp);
+                    break;
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
-    }
-
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
         String action = req.getServletPath();
         logger.debug("Enter method doPost(). Action:{}", action);
 
@@ -60,17 +63,18 @@ public class CoursesServlet extends HttpServlet {
             case "/updateCourses":
                 updateCourse(req, resp);
                 break;
+            case "/assignCourses":
+                assignCourses(req,resp);
+                break;
+
         }
     }
 
-    private void listCourses(HttpServletRequest request, HttpServletResponse response)
-            throws SQLException, IOException, ServletException {
+    private void listCourses(HttpServletRequest request, HttpServletResponse response) {
         logger.info("Enter method listCourses()");
         List<Courses> coursesList = coursesService.getAllCourses();
 
         request.setAttribute("coursesList", coursesList);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/view/coursesList.jsp");
-        dispatcher.forward(request, response);
     }
 
     private void createCourse(HttpServletRequest req, HttpServletResponse resp) {
@@ -146,4 +150,22 @@ public class CoursesServlet extends HttpServlet {
             logger.error(e.getMessage(), e);
         }
     }
+
+    private void getTeacherName(HttpServletRequest req, HttpServletResponse resp) {
+        Long id = Long.parseLong(req.getParameter("idUser"));
+        logger.debug("Enter method getTeacherName() Param: id={}",id);
+
+        try {
+            User user = userService.getUserById(id);
+            req.setAttribute("login",user.getLogin());
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
+    }
+
+    private void assignCourses(HttpServletRequest req, HttpServletResponse resp) {
+
+    }
+
 }

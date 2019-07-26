@@ -55,7 +55,7 @@ public class UserServlet extends HttpServlet {
 
         switch (action) {
             case "/":
-                request.getRequestDispatcher("startPage.jsp").forward(request, response);
+                request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
                 break;
             case "/registration":
                 request.getRequestDispatcher("WEB-INF/view/registration.jsp").forward(request, response);
@@ -156,10 +156,7 @@ public class UserServlet extends HttpServlet {
                 request.setAttribute("error","Registration data is incorrect!");
                 request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
             }
-        } catch (IOException e) {
-            logger.error(e.getMessage(), e);
-            e.printStackTrace();
-        } catch (ServletException | SQLException e) {
+        } catch (IOException | ServletException | SQLException e) {
             e.printStackTrace();
             logger.error(e.getMessage(), e);
         }

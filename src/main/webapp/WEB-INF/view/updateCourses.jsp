@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -6,6 +7,7 @@
 <body>
 <div class="container col-md-6">
     <form action="updateCourses?id=${id}" method="post">
+
         <div class="form-group">
             <label for="theme">Theme</label>
             <input type="text" id="theme" class="form-control" value="${theme}" required name="theme">
@@ -27,7 +29,7 @@
             <input type="number" id="price" class="form-control" value="${price}" name="price" required>
         </div>
         <div>
-            <button class="btn btn-primary" type="submit">Save</button>
+            <button class="btn btn-info" type="submit">Save</button>
         </div>
     </form>
 </div>
