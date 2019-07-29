@@ -6,7 +6,7 @@
 <div style="text-align: center">
     <h1>Login</h1>
 </div>
-<div class="container col-md-6">
+<div class="container col-md-4">
     <form action="login" method="post">
         <div class="form-group">
             <label for="login">Login</label>

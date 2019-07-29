@@ -48,4 +48,5 @@ foreign key (studentId) references usr(idUser);
 
 alter table cts
   add constraint cts_courses
-foreign key (courseId) references courses(idCourses);
+foreign key (courseId) references courses(idCourses)
+  on DELETE CASCADE;

@@ -78,4 +78,5 @@ public class Courses {
     public void setEndOfCourses(Date endOfCourses) {
         this.endOfCourses = endOfCourses;
     }
+
 }

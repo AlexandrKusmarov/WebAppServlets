@@ -4,5 +4,5 @@ VALUES ('Beginner', 'First steps in Java', '2019.08.01', '2019.12.01', 20),
        ('Advanced', 'Codding like a boss', '2020.08.20', '2021.12.25', 40);
 
 insert into usr (idUser, login, password, email ,userRole, isActive)
-  VALUES (1, 'admin', 'admin' , 'admin@admin', 'ADMIN', 1);
+VALUES (1, 'admin', 'admin' , 'admin@admin', 'ADMIN', 1);
 

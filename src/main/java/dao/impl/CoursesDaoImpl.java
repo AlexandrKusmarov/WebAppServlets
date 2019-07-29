@@ -143,4 +143,86 @@ public class CoursesDaoImpl implements CoursesDao {
             else logger.error("Course with id <{}> was NOT updated", id);
         }
     }
+
+    @Override
+    public void assignCoursesToTeacher(Long idTeacher, String[] checkBox) throws SQLException {
+        logger.debug("Enter method assignCoursesToTeacher().Params: idUser={}, checkbox.length={}", idTeacher, checkBox.length);
+
+        for (String box : checkBox) {
+            if (!isCourseAlreadyAssigned(idTeacher, Integer.parseInt(box))) {
+
+                String sql = "INSERT INTO cts(teacherId,courseId) VALUES (?, ?)";
+                try (Connection connection = ConnectionBuilder.getConnection();
+                     PreparedStatement ps = connection.prepareStatement(sql)) {
+                    ps.setLong(1, idTeacher);
+                    ps.setInt(2, Integer.parseInt(box));
+
+                    if (ps.executeUpdate() > 0) {
+                        logger.debug("Course with id <{}> was assigned to teacher with id={}", Integer.parseInt(box), idTeacher);
+                    } else
+                        logger.debug("Course with id <{}> was NOT assigned to teacher with id={}", Integer.parseInt(box), idTeacher);
+                }
+            }
+        }
+    }
+
+    private boolean isCourseAlreadyAssigned(Long idTeacher, Integer idCourse) {
+        logger.debug("Enter method isCourseAlreadyAssigned().Params: idTeacher={}, idCourse={}", idTeacher, idCourse);
+        boolean isAssigned = false;
+
+        String sql = "SELECT * FROM cts WHERE teacherId=? AND courseId=?";
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+            ps.setLong(1, idTeacher);
+            ps.setInt(2, idCourse);
+
+            ResultSet resultSet = ps.executeQuery();
+            if (resultSet.next()) {
+                isAssigned = true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(),e);
+        }
+        return isAssigned;
+    }
+
+    @Override
+    public ArrayList<Long> getCoursesListByUserIdFromTableCts(Long id) {
+        logger.debug("Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher={}", id);
+        String sql = "SELECT * FROM cts where teacherId=?";
+        ArrayList<Long> courses = new ArrayList<>();
+
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+            ps.setLong(1, id);
+
+            ResultSet resultSet = ps.executeQuery();
+            while(resultSet.next()) {
+                    courses.add(resultSet.getLong("courseId"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(),e);
+        }
+        logger.info("Return idList with length={}", courses.size());
+        return courses;
+    }
+
+    @Override
+    public void looseCoursesFromTeacher(Long idTeacher, ArrayList<Long> idForDelete) throws SQLException {
+        logger.debug("Enter method looseCoursesFromTeacher().Param: idForDelete.size()={}", idForDelete.size());
+        String sql = "DELETE FROM cts WHERE teacherId=? AND courseId=?";
+
+        try (Connection connection = ConnectionBuilder.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+
+            for (Long aLong : idForDelete) {
+                ps.setLong(1, idTeacher);
+                ps.setLong(2, aLong);
+                ps.executeUpdate();
+            }
+        }
+        logger.info("Courses was loosed from teacher");
+    }
 }

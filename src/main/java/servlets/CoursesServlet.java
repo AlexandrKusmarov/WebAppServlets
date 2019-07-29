@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class CoursesServlet extends HttpServlet {
@@ -28,25 +29,27 @@ public class CoursesServlet extends HttpServlet {
         String action = req.getServletPath();
         logger.debug("Enter method doGet(). Action:{}", action);
 
-            switch (action) {
-                case "/coursesList":
-                    listCourses(req, resp);
-                    req.getRequestDispatcher("WEB-INF/view/coursesList.jsp").forward(req,resp);
-                    break;
-                case "/addCourses":
-                    req.getRequestDispatcher("WEB-INF/view/addCourses.jsp").forward(req, resp);
-                    break;
-                case "/updateCourses":
-                    bindParamsOfCurrentCourse(req, resp);
-                    req.getRequestDispatcher("WEB-INF/view/updateCourses.jsp").forward(req, resp);
-                    break;
-                case "/assignCourses":
-                    listCourses(req, resp);
-                    getTeacherName(req,resp);
-                    req.getRequestDispatcher("WEB-INF/view/assignCourses.jsp").forward(req, resp);
-                    break;
-            }
+        switch (action) {
+            case "/coursesList":
+                listCourses(req, resp);
+                req.getRequestDispatcher("WEB-INF/view/coursesList.jsp").forward(req, resp);
+                break;
+            case "/addCourses":
+                req.getRequestDispatcher("WEB-INF/view/addCourses.jsp").forward(req, resp);
+                break;
+            case "/updateCourses":
+                bindParamsOfCurrentCourse(req, resp);
+                req.getRequestDispatcher("WEB-INF/view/updateCourses.jsp").forward(req, resp);
+                break;
+            case "/assignCourses":
+                listCourses(req, resp);
+                getTeacherName(req, resp);
+                getAssignedCourses(req, resp);
+                req.getRequestDispatcher("WEB-INF/view/assignCourses.jsp").forward(req, resp);
+                break;
         }
+    }
+
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
@@ -64,11 +67,12 @@ public class CoursesServlet extends HttpServlet {
                 updateCourse(req, resp);
                 break;
             case "/assignCourses":
-                assignCourses(req,resp);
+                looseOrAssignCourses(req, resp);
                 break;
 
         }
     }
+
 
     private void listCourses(HttpServletRequest request, HttpServletResponse response) {
         logger.info("Enter method listCourses()");
@@ -124,7 +128,7 @@ public class CoursesServlet extends HttpServlet {
             Integer price = Integer.parseInt(req.getParameter("price"));
 
             coursesService.updateCourse(id, theme, courseName,
-                    java.sql.Date.valueOf(courseStart),java.sql.Date.valueOf(courseEnd), price);
+                    java.sql.Date.valueOf(courseStart), java.sql.Date.valueOf(courseEnd), price);
             resp.sendRedirect("coursesList");
         } catch (SQLException | IOException e) {
             e.printStackTrace();
@@ -138,7 +142,7 @@ public class CoursesServlet extends HttpServlet {
 
         try {
             Courses course = coursesService.getCourseById(id);
-            req.setAttribute("id",id);
+            req.setAttribute("id", id);
             req.setAttribute("theme", course.getTheme());
             req.setAttribute("courseName", course.getNameOfCourses());
             req.setAttribute("courseStart", course.getStartOfCourses());
@@ -153,11 +157,12 @@ public class CoursesServlet extends HttpServlet {
 
     private void getTeacherName(HttpServletRequest req, HttpServletResponse resp) {
         Long id = Long.parseLong(req.getParameter("idUser"));
-        logger.debug("Enter method getTeacherName() Param: id={}",id);
+        logger.debug("Enter method getTeacherName() Param: id={}", id);
+        req.setAttribute("idUser", id);
 
         try {
             User user = userService.getUserById(id);
-            req.setAttribute("login",user.getLogin());
+            req.setAttribute("login", user.getLogin());
         } catch (SQLException e) {
             e.printStackTrace();
             logger.error(e.getMessage(), e);
@@ -166,6 +171,54 @@ public class CoursesServlet extends HttpServlet {
 
     private void assignCourses(HttpServletRequest req, HttpServletResponse resp) {
 
+        Long id = Long.parseLong(req.getParameter("idUser"));
+        String[] checkBox = req.getParameterValues("assignCourses");
+        logger.debug("Enter method assignCourses() Params: idTeacher={}, checkbox.length={}", id, checkBox.length);
+        try {
+            if (checkBox.length > 0) {
+                coursesService.assignCoursesToTeacher(id, checkBox);
+            }
+            resp.sendRedirect("accounts");
+        } catch (SQLException | IOException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
     }
 
+    private void getAssignedCourses(HttpServletRequest req, HttpServletResponse resp) {
+        Long id = Long.parseLong(req.getParameter("idUser"));
+        logger.debug("Enter method getAssignedCourses() Param: idUser={}", id);
+        ArrayList<Long> coursesId;
+        try {
+            coursesId = coursesService.getCoursesIdListByUserIdFromTableCts(id);
+            if (coursesId.size() > 0) {
+                req.setAttribute("coursesId", coursesId);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
+    }
+
+    private void looseOrAssignCourses(HttpServletRequest req, HttpServletResponse resp) {
+        Long id = Long.parseLong(req.getParameter("idUser"));
+        logger.debug("Enter method looseOrAssign() Param: idUser={}", id);
+        String[] checkBox = req.getParameterValues("assignCourses");
+        try {
+            ArrayList<Long> idList = coursesService.getCoursesIdListByUserIdFromTableCts(id);
+            if (idList.size() > checkBox.length) {
+                for (String aCheckBox : checkBox) {
+                    Long idDel = Long.parseLong(aCheckBox);
+                    idList.remove(idDel);
+                }
+                if (idList.size() > 0) {
+                    coursesService.looseCoursesFromTeacher(id, idList);
+                    resp.sendRedirect("accounts");
+                }
+            } else assignCourses(req, resp);
+        } catch (SQLException | IOException e) {
+            e.printStackTrace();
+            logger.error(e.getMessage(), e);
+        }
+    }
 }

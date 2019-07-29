@@ -5,6 +5,7 @@ import model.Courses;
 import service.CoursesService;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -33,5 +34,20 @@ public class CoursesServiceImpl implements CoursesService {
     @Override
     public void updateCourse(Long id, String theme, String courseName, Date courseStart, Date courseEnd, Integer price) throws SQLException {
         coursesDaoImpl.updateCourse(id, theme, courseName, courseStart, courseEnd, price);
+    }
+
+    @Override
+    public void assignCoursesToTeacher(Long idTeacher, String[] checkBox) throws SQLException {
+        coursesDaoImpl.assignCoursesToTeacher(idTeacher ,checkBox);
+    }
+
+    @Override
+    public ArrayList<Long> getCoursesIdListByUserIdFromTableCts(Long id) throws SQLException {
+        return coursesDaoImpl.getCoursesListByUserIdFromTableCts(id);
+    }
+
+    @Override
+    public void looseCoursesFromTeacher(Long idTeacher, ArrayList<Long> idForDelete) throws SQLException {
+        coursesDaoImpl.looseCoursesFromTeacher(idTeacher ,idForDelete);
     }
 }
