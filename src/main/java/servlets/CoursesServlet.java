@@ -1,6 +1,7 @@
 package servlets;
 
 import model.Courses;
+import model.Role;
 import model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -69,7 +70,10 @@ public class CoursesServlet extends HttpServlet {
             case "/assignCourses":
                 looseOrAssignCourses(req, resp);
                 break;
-
+            case "/assignCoursesToStudent":
+                getAssignedCourses(req, resp);
+                assignCourses(req, resp);
+                break;
         }
     }
 
@@ -179,7 +183,12 @@ public class CoursesServlet extends HttpServlet {
             if (checkBox.length > 0) {
                 coursesService.assignCoursesToTeacher(id, checkBox);
             }
-            resp.sendRedirect("accounts");
+            if(userService.getUserById(id).getRole().equals(Role.STUDENT)) {
+                resp.sendRedirect("coursesList");
+            }
+            else {
+                resp.sendRedirect("accounts");
+            }
         } catch (SQLException | IOException e) {
             e.printStackTrace();
             logger.error(e.getMessage(), e);
@@ -214,8 +223,8 @@ public class CoursesServlet extends HttpServlet {
                 }
                 if (idList.size() > 0) {
                     coursesService.looseCoursesFromTeacher(id, idList);
-                    resp.sendRedirect("accounts");
-                }
+                        resp.sendRedirect("accounts");
+                    }
             } else assignCourses(req, resp);
         } catch (SQLException | IOException e) {
             e.printStackTrace();

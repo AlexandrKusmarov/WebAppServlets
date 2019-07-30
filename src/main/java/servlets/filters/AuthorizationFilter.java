@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 public class AuthorizationFilter implements Filter {
 
-    private static Logger logger = LoggerFactory.getLogger(UserServlet.class);
+    private static Logger logger = LoggerFactory.getLogger(AuthorizationFilter.class);
     private UserServiceImpl userService = new UserServiceImpl();
 
     @Override

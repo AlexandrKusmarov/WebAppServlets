@@ -42,7 +42,7 @@
                 </c:when>
                 <c:when test="${role  == \"STUDENT\"}">
                     <td>
-                        <form action="assignCourses?idUser=<%=session.getAttribute("idUser")%>" method="post">
+                        <form action="assignCoursesToStudent?idUser=<%=session.getAttribute("idUser")%>" method="post">
                             <button style="background-color: #a9db45" type="submit"
                                     name="assignCourses" value="${course.idCourses}">Sign up
                             </button>

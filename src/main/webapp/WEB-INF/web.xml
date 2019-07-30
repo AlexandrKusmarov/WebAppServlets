@@ -20,6 +20,33 @@
         <url-pattern>/coursesList</url-pattern>
     </filter-mapping>
 
+    <filter>
+        <filter-name>AccessControlFilter</filter-name>
+        <filter-class>servlets.filters.AccessControl</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AccessControlFilter</filter-name>
+        <url-pattern>/updateCourses</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AccessControlFilter</filter-name>
+        <url-pattern>/addCourses</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AccessControlFilter</filter-name>
+        <url-pattern>/accounts</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AccessControlFilter</filter-name>
+        <url-pattern>/addTeacher</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AccessControlFilter</filter-name>
+        <url-pattern>/assignCourses</url-pattern>
+    </filter-mapping>
+
+
+
     <!--Index servlet-->
     <servlet>
         <servlet-name>userServlet</servlet-name>
@@ -73,6 +100,14 @@
     <servlet-mapping>
         <servlet-name>AssignCourses</servlet-name>
         <url-pattern>/assignCourses</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AssignCoursesToStudent</servlet-name>
+        <servlet-class>servlets.CoursesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AssignCoursesToStudent</servlet-name>
+        <url-pattern>/assignCoursesToStudent</url-pattern>
     </servlet-mapping>
 
 
