@@ -32,8 +32,7 @@ create table if not exists usr (
 
 create table if not exists cts (
   idCts int(8) not null auto_increment primary key,
-  studentId int (8),
-  teacherId int(8),
+  userId int(8),
   courseId int(8),
   mark int (8)
 );
@@ -43,10 +42,11 @@ alter table journal
 foreign key (coursId) references courses (idCourses);
 
 alter table cts
-  add constraint cts_user
-foreign key (studentId) references usr(idUser);
+  add constraint cts_courses_fk
+foreign key (courseId) references courses(idCourses)
+  on DELETE CASCADE;
 
 alter table cts
-  add constraint cts_courses
-foreign key (courseId) references courses(idCourses)
+  add constraint cts_user_fk
+foreign key (userId) references usr(idUser)
   on DELETE CASCADE;

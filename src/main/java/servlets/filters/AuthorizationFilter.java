@@ -35,6 +35,7 @@ public class AuthorizationFilter implements Filter {
                 request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request, response);
             }
             else {
+                session.setAttribute("idUser",userService.getUserByLogin(userName).getIdUser());
                 chain.doFilter(request, response);
             }
         } catch (SQLException e) {

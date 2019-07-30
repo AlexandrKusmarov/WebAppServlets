@@ -151,7 +151,7 @@ public class CoursesDaoImpl implements CoursesDao {
         for (String box : checkBox) {
             if (!isCourseAlreadyAssigned(idTeacher, Integer.parseInt(box))) {
 
-                String sql = "INSERT INTO cts(teacherId,courseId) VALUES (?, ?)";
+                String sql = "INSERT INTO cts(userId,courseId) VALUES (?, ?)";
                 try (Connection connection = ConnectionBuilder.getConnection();
                      PreparedStatement ps = connection.prepareStatement(sql)) {
                     ps.setLong(1, idTeacher);
@@ -169,8 +169,7 @@ public class CoursesDaoImpl implements CoursesDao {
     private boolean isCourseAlreadyAssigned(Long idTeacher, Integer idCourse) {
         logger.debug("Enter method isCourseAlreadyAssigned().Params: idTeacher={}, idCourse={}", idTeacher, idCourse);
         boolean isAssigned = false;
-
-        String sql = "SELECT * FROM cts WHERE teacherId=? AND courseId=?";
+        String sql = "SELECT * FROM cts WHERE userId=? AND courseId=?";
         try (Connection connection = ConnectionBuilder.getConnection();
              PreparedStatement ps = connection.prepareStatement(sql)) {
             ps.setLong(1, idTeacher);
@@ -190,7 +189,11 @@ public class CoursesDaoImpl implements CoursesDao {
     @Override
     public ArrayList<Long> getCoursesListByUserIdFromTableCts(Long id) {
         logger.debug("Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher={}", id);
-        String sql = "SELECT * FROM cts where teacherId=?";
+        String sql ="SELECT courseId\n" +
+                "FROM cts\n" +
+                "       INNER JOIN usr ON userId = idUser\n" +
+                "WHERE userRole = 'TEACHER'\n" +
+                "  AND userId = ?";
         ArrayList<Long> courses = new ArrayList<>();
 
         try (Connection connection = ConnectionBuilder.getConnection();
@@ -212,7 +215,7 @@ public class CoursesDaoImpl implements CoursesDao {
     @Override
     public void looseCoursesFromTeacher(Long idTeacher, ArrayList<Long> idForDelete) throws SQLException {
         logger.debug("Enter method looseCoursesFromTeacher().Param: idForDelete.size()={}", idForDelete.size());
-        String sql = "DELETE FROM cts WHERE teacherId=? AND courseId=?";
+        String sql = "DELETE FROM cts WHERE userId=? AND courseId=?";
 
         try (Connection connection = ConnectionBuilder.getConnection();
              PreparedStatement ps = connection.prepareStatement(sql)) {

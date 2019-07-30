@@ -76,6 +76,7 @@ public class CoursesServlet extends HttpServlet {
 
     private void listCourses(HttpServletRequest request, HttpServletResponse response) {
         logger.info("Enter method listCourses()");
+
         List<Courses> coursesList = coursesService.getAllCourses();
 
         request.setAttribute("coursesList", coursesList);

@@ -22106,3 +22106,792 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 2019-07-29 17:19:19 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
 2019-07-29 17:19:19 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
 2019-07-29 17:19:19 INFO  CoursesDaoImpl:208 - Return idList with length=1
+2019-07-30 11:21:36 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 11:21:37 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 11:21:38 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 11:21:38 INFO  UserServlet:54 - Enter method doGet, ACTION: /favicon.ico
+2019-07-30 11:21:46 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-30 11:21:46 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-30 11:21:46 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-30 11:21:48 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-30 11:21:48 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 11:21:48 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 11:21:48 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 11:21:48 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 11:21:48 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-30 11:21:48 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 11:21:48 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 11:21:48 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 11:21:48 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 11:21:49 INFO  UserServlet:54 - Enter method doGet, ACTION: /favicon.ico
+2019-07-30 11:21:55 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 11:21:55 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 11:21:55 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 11:21:55 INFO  UserDaoimpl:159 - Number of accounts: 3
+2019-07-30 11:21:57 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 11:21:57 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 11:21:57 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 11:21:57 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 11:21:57 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 11:21:57 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 11:21:57 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 11:21:57 INFO  CoursesDaoImpl:208 - Return idList with length=1
+2019-07-30 11:22:16 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 11:22:16 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 11:22:16 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 11:22:16 INFO  UserDaoimpl:159 - Number of accounts: 3
+2019-07-30 11:22:49 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 11:22:49 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 11:22:49 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 11:22:49 INFO  UserDaoimpl:159 - Number of accounts: 3
+2019-07-30 11:22:50 INFO  UserServlet:54 - Enter method doGet, ACTION: /addTeacher
+2019-07-30 11:22:52 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 11:22:52 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 11:22:52 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 11:22:52 INFO  UserDaoimpl:159 - Number of accounts: 3
+2019-07-30 11:22:53 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 11:22:53 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 11:22:53 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 11:22:53 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 11:22:53 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 11:22:53 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 11:22:53 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 11:22:53 INFO  CoursesDaoImpl:208 - Return idList with length=1
+2019-07-30 11:23:54 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/addCourses
+2019-07-30 11:23:59 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 11:23:59 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 11:23:59 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 11:23:59 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 11:39:32 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 11:39:32 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 11:39:32 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 11:39:32 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 11:39:32 INFO  UserServlet:54 - Enter method doGet, ACTION: /favicon.ico
+2019-07-30 11:51:35 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 11:51:35 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 11:51:36 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 11:51:42 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-30 11:51:42 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-30 11:51:42 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-30 11:51:42 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-30 11:51:42 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 11:51:42 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 11:51:42 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 11:51:42 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 11:51:42 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-30 11:51:42 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 11:51:42 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 11:51:42 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 11:51:42 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 11:51:44 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 11:51:44 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 11:51:44 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 11:51:44 INFO  UserDaoimpl:159 - Number of accounts: 3
+2019-07-30 11:51:46 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 11:51:46 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 11:51:46 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 11:51:46 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 11:51:46 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 11:51:46 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 11:51:46 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 11:51:46 INFO  CoursesDaoImpl:208 - Return idList with length=1
+2019-07-30 11:51:49 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 11:51:49 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 11:51:49 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 11:51:49 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 11:51:49 INFO  UserServlet:27 - Enter method doPost, ACTION: /logout
+2019-07-30 11:51:49 INFO  UserServlet:84 - Enter method logout()
+2019-07-30 11:51:49 INFO  UserServlet:90 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-30 11:51:49 INFO  UserServlet:54 - Enter method doGet, ACTION: /logout
+2019-07-30 11:51:50 INFO  UserServlet:54 - Enter method doGet, ACTION: /login
+2019-07-30 11:51:51 INFO  UserServlet:54 - Enter method doGet, ACTION: /registration
+2019-07-30 11:51:57 INFO  UserServlet:27 - Enter method doPost, ACTION: /registration
+2019-07-30 11:51:57 INFO  UserDaoimpl:75 - Enter method findUserByLogin
+2019-07-30 11:51:57 DEBUG UserServlet:107 - Enter method insertUser: login:adm  email:adm@adm 
+2019-07-30 11:51:57 INFO  UserDaoimpl:23 - Enter method insertNewUser
+2019-07-30 11:51:58 INFO  UserDaoimpl:43 - STUDENT  <adm> was added.
+2019-07-30 11:51:58 INFO  UserServlet:54 - Enter method doGet, ACTION: /login
+2019-07-30 11:52:01 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-30 11:52:01 DEBUG UserServlet:139 - Method checkUserByLogin: login:adm 
+2019-07-30 11:52:01 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-30 11:52:01 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-30 11:52:01 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-30 11:52:01 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-30 11:52:01 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-30 11:52:01 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-30 11:52:01 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-30 11:52:01 INFO  UserServlet:31 - Enter doFilter() userName == adm
+2019-07-30 11:52:01 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-30 11:52:01 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 11:52:01 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 11:52:01 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 11:52:26 INFO  UserServlet:54 - Enter method doGet, ACTION: /internship
+2019-07-30 11:52:41 INFO  UserServlet:54 - Enter method doGet, ACTION: /profile
+2019-07-30 13:03:37 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:03:37 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:03:38 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:03:42 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-30 13:03:42 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-30 13:03:42 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-30 13:03:42 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-30 13:03:42 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 13:03:42 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 13:03:42 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 13:03:42 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 13:03:42 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-30 13:03:42 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:03:42 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:03:42 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:03:42 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:03:44 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:03:44 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:03:44 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:03:44 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:03:45 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:03:45 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:03:45 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:03:45 INFO  UserDaoimpl:159 - Number of accounts: 4
+2019-07-30 13:03:48 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:03:48 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:03:48 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:03:48 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:03:48 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:03:48 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:03:48 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:03:48 INFO  CoursesDaoImpl:213 - Return idList with length=1
+2019-07-30 13:03:53 DEBUG CoursesServlet:57 - Enter method doPost(). Action:/assignCourses
+2019-07-30 13:03:53 DEBUG CoursesServlet:205 - Enter method looseOrAssign() Param: idUser=2
+2019-07-30 13:03:53 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:03:53 INFO  CoursesDaoImpl:213 - Return idList with length=1
+2019-07-30 13:03:53 DEBUG CoursesServlet:176 - Enter method assignCourses() Params: idTeacher=2, checkbox.length=2
+2019-07-30 13:03:53 DEBUG CoursesDaoImpl:149 - Enter method assignCoursesToTeacher().Params: idUser=2, checkbox.length=2
+2019-07-30 13:03:53 DEBUG CoursesDaoImpl:170 - Enter method isCourseAlreadyAssigned().Params: idTeacher=2, idCourse=1
+2019-07-30 13:03:53 DEBUG CoursesDaoImpl:170 - Enter method isCourseAlreadyAssigned().Params: idTeacher=2, idCourse=8
+2019-07-30 13:03:53 DEBUG CoursesDaoImpl:161 - Course with id <8> was assigned to teacher with id=2
+2019-07-30 13:03:53 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:03:53 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:03:53 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:03:53 INFO  UserDaoimpl:159 - Number of accounts: 4
+2019-07-30 13:03:54 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:03:54 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:03:54 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:03:54 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:03:54 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:03:54 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:03:54 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:03:54 INFO  CoursesDaoImpl:213 - Return idList with length=2
+2019-07-30 13:03:58 DEBUG CoursesServlet:57 - Enter method doPost(). Action:/assignCourses
+2019-07-30 13:03:58 DEBUG CoursesServlet:205 - Enter method looseOrAssign() Param: idUser=2
+2019-07-30 13:03:58 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:03:58 INFO  CoursesDaoImpl:213 - Return idList with length=2
+2019-07-30 13:03:58 DEBUG CoursesServlet:176 - Enter method assignCourses() Params: idTeacher=2, checkbox.length=3
+2019-07-30 13:03:58 DEBUG CoursesDaoImpl:149 - Enter method assignCoursesToTeacher().Params: idUser=2, checkbox.length=3
+2019-07-30 13:03:58 DEBUG CoursesDaoImpl:170 - Enter method isCourseAlreadyAssigned().Params: idTeacher=2, idCourse=1
+2019-07-30 13:03:58 DEBUG CoursesDaoImpl:170 - Enter method isCourseAlreadyAssigned().Params: idTeacher=2, idCourse=7
+2019-07-30 13:03:58 DEBUG CoursesDaoImpl:161 - Course with id <7> was assigned to teacher with id=2
+2019-07-30 13:03:58 DEBUG CoursesDaoImpl:170 - Enter method isCourseAlreadyAssigned().Params: idTeacher=2, idCourse=8
+2019-07-30 13:03:58 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:03:58 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:03:58 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:03:58 INFO  UserDaoimpl:159 - Number of accounts: 4
+2019-07-30 13:03:59 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:03:59 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:03:59 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:03:59 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:03:59 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:03:59 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:03:59 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:03:59 INFO  CoursesDaoImpl:213 - Return idList with length=3
+2019-07-30 13:04:02 DEBUG CoursesServlet:57 - Enter method doPost(). Action:/assignCourses
+2019-07-30 13:04:02 DEBUG CoursesServlet:205 - Enter method looseOrAssign() Param: idUser=2
+2019-07-30 13:04:02 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:04:02 INFO  CoursesDaoImpl:213 - Return idList with length=3
+2019-07-30 13:04:02 DEBUG CoursesDaoImpl:219 - Enter method looseCoursesFromTeacher().Param: idForDelete.size()=2
+2019-07-30 13:04:02 INFO  CoursesDaoImpl:231 - Courses was loosed from teacher
+2019-07-30 13:04:02 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:04:02 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:04:02 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:04:02 INFO  UserDaoimpl:159 - Number of accounts: 4
+2019-07-30 13:04:03 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:04:03 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:04:03 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:04:03 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:04:03 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:04:03 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:04:03 DEBUG CoursesDaoImpl:192 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:04:03 INFO  CoursesDaoImpl:213 - Return idList with length=1
+2019-07-30 13:24:14 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:24:15 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:24:15 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:24:23 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-30 13:24:23 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-30 13:24:23 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-30 13:24:23 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-30 13:24:23 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 13:24:23 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 13:24:23 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 13:24:23 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 13:24:23 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-30 13:24:23 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:24:23 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:24:23 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:24:23 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:24:25 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:24:25 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:24:25 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:24:26 INFO  UserDaoimpl:159 - Number of accounts: 1
+2019-07-30 13:24:29 INFO  UserServlet:54 - Enter method doGet, ACTION: /addTeacher
+2019-07-30 13:24:38 INFO  UserServlet:27 - Enter method doPost, ACTION: /addTeacher
+2019-07-30 13:24:38 INFO  UserServlet:166 - Enter method addNewTeacher()
+2019-07-30 13:24:38 INFO  UserDaoimpl:23 - Enter method insertNewUser
+2019-07-30 13:24:38 INFO  UserDaoimpl:43 - TEACHER  <pro> was added.
+2019-07-30 13:24:38 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:24:38 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:24:38 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:24:38 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:24:41 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:24:41 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:24:41 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:24:41 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:24:42 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:24:42 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:24:42 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:24:42 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:24:42 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:24:42 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:24:42 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:24:42 ERROR CoursesDaoImpl:209 - Unknown column 'teacherId' in 'where clause'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'teacherId' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at dao.impl.CoursesDaoImpl.getCoursesListByUserIdFromTableCts(CoursesDaoImpl.java:203)
+	at service.impl.CoursesServiceImpl.getCoursesIdListByUserIdFromTableCts(CoursesServiceImpl.java:46)
+	at servlets.CoursesServlet.getAssignedCourses(CoursesServlet.java:193)
+	at servlets.CoursesServlet.doGet(CoursesServlet.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-30 13:24:42 INFO  CoursesDaoImpl:211 - Return idList with length=0
+2019-07-30 13:24:46 DEBUG CoursesServlet:57 - Enter method doPost(). Action:/assignCourses
+2019-07-30 13:24:46 DEBUG CoursesServlet:205 - Enter method looseOrAssign() Param: idUser=2
+2019-07-30 13:24:46 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:24:46 ERROR CoursesDaoImpl:209 - Unknown column 'teacherId' in 'where clause'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'teacherId' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at dao.impl.CoursesDaoImpl.getCoursesListByUserIdFromTableCts(CoursesDaoImpl.java:203)
+	at service.impl.CoursesServiceImpl.getCoursesIdListByUserIdFromTableCts(CoursesServiceImpl.java:46)
+	at servlets.CoursesServlet.looseOrAssignCourses(CoursesServlet.java:208)
+	at servlets.CoursesServlet.doPost(CoursesServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-30 13:24:46 INFO  CoursesDaoImpl:211 - Return idList with length=0
+2019-07-30 13:24:46 DEBUG CoursesServlet:176 - Enter method assignCourses() Params: idTeacher=2, checkbox.length=1
+2019-07-30 13:24:46 DEBUG CoursesDaoImpl:149 - Enter method assignCoursesToTeacher().Params: idUser=2, checkbox.length=1
+2019-07-30 13:24:46 DEBUG CoursesDaoImpl:170 - Enter method isCourseAlreadyAssigned().Params: idTeacher=2, idCourse=1
+2019-07-30 13:24:46 DEBUG CoursesDaoImpl:161 - Course with id <1> was assigned to teacher with id=2
+2019-07-30 13:24:46 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:24:46 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:24:46 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:24:46 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:24:47 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:24:47 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:24:47 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:24:47 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:24:47 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:24:47 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:24:47 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:24:47 ERROR CoursesDaoImpl:209 - Unknown column 'teacherId' in 'where clause'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'teacherId' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at dao.impl.CoursesDaoImpl.getCoursesListByUserIdFromTableCts(CoursesDaoImpl.java:203)
+	at service.impl.CoursesServiceImpl.getCoursesIdListByUserIdFromTableCts(CoursesServiceImpl.java:46)
+	at servlets.CoursesServlet.getAssignedCourses(CoursesServlet.java:193)
+	at servlets.CoursesServlet.doGet(CoursesServlet.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-30 13:24:47 INFO  CoursesDaoImpl:211 - Return idList with length=0
+2019-07-30 13:24:53 DEBUG CoursesServlet:57 - Enter method doPost(). Action:/assignCourses
+2019-07-30 13:24:53 DEBUG CoursesServlet:205 - Enter method looseOrAssign() Param: idUser=2
+2019-07-30 13:24:53 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:24:53 ERROR CoursesDaoImpl:209 - Unknown column 'teacherId' in 'where clause'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'teacherId' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at dao.impl.CoursesDaoImpl.getCoursesListByUserIdFromTableCts(CoursesDaoImpl.java:203)
+	at service.impl.CoursesServiceImpl.getCoursesIdListByUserIdFromTableCts(CoursesServiceImpl.java:46)
+	at servlets.CoursesServlet.looseOrAssignCourses(CoursesServlet.java:208)
+	at servlets.CoursesServlet.doPost(CoursesServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-30 13:24:53 INFO  CoursesDaoImpl:211 - Return idList with length=0
+2019-07-30 13:24:53 DEBUG CoursesServlet:176 - Enter method assignCourses() Params: idTeacher=2, checkbox.length=1
+2019-07-30 13:24:53 DEBUG CoursesDaoImpl:149 - Enter method assignCoursesToTeacher().Params: idUser=2, checkbox.length=1
+2019-07-30 13:24:53 DEBUG CoursesDaoImpl:170 - Enter method isCourseAlreadyAssigned().Params: idTeacher=2, idCourse=1
+2019-07-30 13:24:53 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:24:53 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:24:53 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:24:53 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:24:54 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:24:54 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:24:54 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:24:54 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:24:54 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:24:54 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:24:54 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:24:54 ERROR CoursesDaoImpl:209 - Unknown column 'teacherId' in 'where clause'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'teacherId' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at dao.impl.CoursesDaoImpl.getCoursesListByUserIdFromTableCts(CoursesDaoImpl.java:203)
+	at service.impl.CoursesServiceImpl.getCoursesIdListByUserIdFromTableCts(CoursesServiceImpl.java:46)
+	at servlets.CoursesServlet.getAssignedCourses(CoursesServlet.java:193)
+	at servlets.CoursesServlet.doGet(CoursesServlet.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-30 13:24:54 INFO  CoursesDaoImpl:211 - Return idList with length=0
+2019-07-30 13:25:40 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:25:40 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:25:41 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:25:43 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-30 13:25:43 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-30 13:25:43 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-30 13:25:43 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-30 13:25:43 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 13:25:43 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 13:25:43 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 13:25:43 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 13:25:43 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-30 13:25:44 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:25:44 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:25:44 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:25:44 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:25:45 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:25:45 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:25:45 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:25:45 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:25:46 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:25:46 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:25:46 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:25:46 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:25:47 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:25:47 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:25:47 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:25:47 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:25:47 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:25:47 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:25:47 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:25:47 INFO  CoursesDaoImpl:211 - Return idList with length=1
+2019-07-30 13:25:52 DEBUG CoursesServlet:57 - Enter method doPost(). Action:/assignCourses
+2019-07-30 13:25:52 DEBUG CoursesServlet:205 - Enter method looseOrAssign() Param: idUser=2
+2019-07-30 13:25:52 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:25:52 INFO  CoursesDaoImpl:211 - Return idList with length=1
+2019-07-30 13:25:52 DEBUG CoursesServlet:176 - Enter method assignCourses() Params: idTeacher=2, checkbox.length=1
+2019-07-30 13:25:52 DEBUG CoursesDaoImpl:149 - Enter method assignCoursesToTeacher().Params: idUser=2, checkbox.length=1
+2019-07-30 13:25:52 DEBUG CoursesDaoImpl:170 - Enter method isCourseAlreadyAssigned().Params: idTeacher=2, idCourse=2
+2019-07-30 13:25:52 DEBUG CoursesDaoImpl:161 - Course with id <2> was assigned to teacher with id=2
+2019-07-30 13:25:52 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:25:52 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:25:52 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:25:52 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:25:53 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:25:53 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:25:53 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:25:53 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:25:53 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:25:53 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:25:53 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:25:53 INFO  CoursesDaoImpl:211 - Return idList with length=2
+2019-07-30 13:26:04 DEBUG CoursesServlet:57 - Enter method doPost(). Action:/assignCourses
+2019-07-30 13:26:04 DEBUG CoursesServlet:205 - Enter method looseOrAssign() Param: idUser=2
+2019-07-30 13:26:04 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:26:04 INFO  CoursesDaoImpl:211 - Return idList with length=2
+2019-07-30 13:26:04 DEBUG CoursesDaoImpl:217 - Enter method looseCoursesFromTeacher().Param: idForDelete.size()=1
+2019-07-30 13:26:04 INFO  CoursesDaoImpl:229 - Courses was loosed from teacher
+2019-07-30 13:26:04 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:26:04 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:26:04 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:26:04 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:26:05 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:26:05 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:26:05 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:26:05 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:26:05 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:26:05 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:26:05 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:26:05 INFO  CoursesDaoImpl:211 - Return idList with length=1
+2019-07-30 13:26:22 INFO  UserServlet:54 - Enter method doGet, ACTION: /addTeacher
+2019-07-30 13:26:24 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:26:24 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:26:24 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:26:24 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:26:32 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:26:32 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:26:32 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:26:32 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:26:33 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:26:33 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:26:33 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:26:33 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:26:35 INFO  UserServlet:54 - Enter method doGet, ACTION: /addTeacher
+2019-07-30 13:26:37 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/addCourses
+2019-07-30 13:26:38 INFO  UserServlet:54 - Enter method doGet, ACTION: /addTeacher
+2019-07-30 13:26:39 INFO  UserServlet:54 - Enter method doGet, ACTION: /profile
+2019-07-30 13:26:41 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:26:41 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:26:41 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:26:41 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:26:48 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:26:48 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:26:48 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:26:48 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:26:48 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:26:48 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:26:48 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:26:48 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:26:51 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:26:51 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:26:51 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:26:51 INFO  UserDaoimpl:159 - Number of accounts: 2
+2019-07-30 13:26:55 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:26:55 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:26:55 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:26:55 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:26:55 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:26:55 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:26:55 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:26:55 INFO  CoursesDaoImpl:211 - Return idList with length=1
+2019-07-30 13:27:18 INFO  UserServlet:27 - Enter method doPost, ACTION: /logout
+2019-07-30 13:27:18 INFO  UserServlet:84 - Enter method logout()
+2019-07-30 13:27:18 INFO  UserServlet:90 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-30 13:27:18 INFO  UserServlet:54 - Enter method doGet, ACTION: /logout
+2019-07-30 13:27:18 INFO  UserServlet:54 - Enter method doGet, ACTION: /login
+2019-07-30 13:27:22 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-30 13:27:22 DEBUG UserServlet:139 - Method checkUserByLogin: login:adm 
+2019-07-30 13:27:22 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-30 13:27:24 INFO  UserServlet:54 - Enter method doGet, ACTION: /registration
+2019-07-30 13:27:32 INFO  UserServlet:27 - Enter method doPost, ACTION: /registration
+2019-07-30 13:27:32 INFO  UserDaoimpl:75 - Enter method findUserByLogin
+2019-07-30 13:27:32 DEBUG UserServlet:107 - Enter method insertUser: login:adm  email:adm@adm 
+2019-07-30 13:27:32 INFO  UserDaoimpl:23 - Enter method insertNewUser
+2019-07-30 13:27:33 INFO  UserDaoimpl:43 - STUDENT  <adm> was added.
+2019-07-30 13:27:33 INFO  UserServlet:54 - Enter method doGet, ACTION: /login
+2019-07-30 13:27:37 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-30 13:27:37 DEBUG UserServlet:139 - Method checkUserByLogin: login:adm 
+2019-07-30 13:27:37 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-30 13:27:37 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-30 13:27:37 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-30 13:27:37 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-30 13:27:37 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-30 13:27:37 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-30 13:27:37 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-30 13:27:37 INFO  UserServlet:31 - Enter doFilter() userName == adm
+2019-07-30 13:27:37 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-30 13:27:37 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:27:37 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:27:37 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:27:39 INFO  UserServlet:31 - Enter doFilter() userName == adm
+2019-07-30 13:27:39 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-30 13:27:39 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:27:39 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:27:39 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:27:41 INFO  UserServlet:27 - Enter method doPost, ACTION: /logout
+2019-07-30 13:27:41 INFO  UserServlet:84 - Enter method logout()
+2019-07-30 13:27:41 INFO  UserServlet:90 - Redirect to logout.jsp. Close session, redirect to login.jsp
+2019-07-30 13:27:41 INFO  UserServlet:54 - Enter method doGet, ACTION: /logout
+2019-07-30 13:27:41 INFO  UserServlet:54 - Enter method doGet, ACTION: /login
+2019-07-30 13:27:44 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-30 13:27:44 DEBUG UserServlet:139 - Method checkUserByLogin: login:admin 
+2019-07-30 13:27:44 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-30 13:27:44 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-30 13:27:44 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 13:27:44 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 13:27:44 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=admin
+2019-07-30 13:27:44 INFO  UserDaoimpl:265 - User <admin> was found.
+2019-07-30 13:27:44 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-30 13:27:44 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:27:44 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:27:44 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:27:44 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:27:46 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:27:46 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:27:46 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:27:46 INFO  UserDaoimpl:159 - Number of accounts: 3
+2019-07-30 13:27:50 INFO  UserServlet:27 - Enter method doPost, ACTION: /onOffAccount
+2019-07-30 13:27:50 INFO  UserServlet:200 - Enter method changeAccountStatus(). Param: id=3;
+2019-07-30 13:27:50 INFO  UserDaoimpl:165 - Enter method getUserById() ID=3
+2019-07-30 13:27:50 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-30 13:27:50 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-30 13:27:50 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:27:50 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:27:50 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:27:50 INFO  UserDaoimpl:159 - Number of accounts: 3
+2019-07-30 13:27:51 INFO  UserServlet:27 - Enter method doPost, ACTION: /onOffAccount
+2019-07-30 13:27:51 INFO  UserServlet:200 - Enter method changeAccountStatus(). Param: id=3;
+2019-07-30 13:27:51 INFO  UserDaoimpl:165 - Enter method getUserById() ID=3
+2019-07-30 13:27:51 INFO  UserDaoimpl:193 - Enter method updateUser()
+2019-07-30 13:27:51 INFO  UserDaoimpl:208 - User <adm> was updated.
+2019-07-30 13:27:51 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:27:51 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:27:51 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:27:51 INFO  UserDaoimpl:159 - Number of accounts: 3
+2019-07-30 13:28:17 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:28:17 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:28:17 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:28:17 INFO  UserDaoimpl:159 - Number of accounts: 3
+2019-07-30 13:28:17 INFO  UserServlet:54 - Enter method doGet, ACTION: /addTeacher
+2019-07-30 13:28:18 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/addCourses
+2019-07-30 13:31:35 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/addCourses
+2019-07-30 13:31:36 INFO  UserServlet:54 - Enter method doGet, ACTION: /addTeacher
+2019-07-30 13:31:46 INFO  UserServlet:27 - Enter method doPost, ACTION: /addTeacher
+2019-07-30 13:31:46 INFO  UserServlet:166 - Enter method addNewTeacher()
+2019-07-30 13:31:46 INFO  UserDaoimpl:23 - Enter method insertNewUser
+2019-07-30 13:31:47 INFO  UserDaoimpl:43 - TEACHER  <pro2> was added.
+2019-07-30 13:31:47 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:31:47 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:31:47 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:31:47 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:31:48 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:31:48 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:31:48 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:31:48 INFO  UserDaoimpl:159 - Number of accounts: 4
+2019-07-30 13:31:49 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:31:49 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:31:49 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:31:49 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=4
+2019-07-30 13:31:49 INFO  UserDaoimpl:165 - Enter method getUserById() ID=4
+2019-07-30 13:31:49 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=4
+2019-07-30 13:31:49 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=4
+2019-07-30 13:31:49 INFO  CoursesDaoImpl:211 - Return idList with length=0
+2019-07-30 13:31:52 DEBUG CoursesServlet:57 - Enter method doPost(). Action:/assignCourses
+2019-07-30 13:31:52 DEBUG CoursesServlet:205 - Enter method looseOrAssign() Param: idUser=4
+2019-07-30 13:31:52 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=4
+2019-07-30 13:31:52 INFO  CoursesDaoImpl:211 - Return idList with length=0
+2019-07-30 13:31:52 DEBUG CoursesServlet:176 - Enter method assignCourses() Params: idTeacher=4, checkbox.length=1
+2019-07-30 13:31:52 DEBUG CoursesDaoImpl:149 - Enter method assignCoursesToTeacher().Params: idUser=4, checkbox.length=1
+2019-07-30 13:31:52 DEBUG CoursesDaoImpl:170 - Enter method isCourseAlreadyAssigned().Params: idTeacher=4, idCourse=3
+2019-07-30 13:31:52 DEBUG CoursesDaoImpl:161 - Course with id <3> was assigned to teacher with id=4
+2019-07-30 13:31:52 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:31:52 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:31:52 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:31:52 INFO  UserDaoimpl:159 - Number of accounts: 4
+2019-07-30 13:32:15 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/addCourses
+2019-07-30 13:32:16 INFO  UserServlet:54 - Enter method doGet, ACTION: /addTeacher
+2019-07-30 13:32:17 INFO  UserServlet:54 - Enter method doGet, ACTION: /accounts
+2019-07-30 13:32:17 INFO  UserServlet:186 - Enter method listAccounts()
+2019-07-30 13:32:17 INFO  UserDaoimpl:139 - Enter method listAccounts
+2019-07-30 13:32:17 INFO  UserDaoimpl:159 - Number of accounts: 4
+2019-07-30 13:32:21 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/assignCourses
+2019-07-30 13:32:21 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:32:21 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:32:21 DEBUG CoursesServlet:160 - Enter method getTeacherName() Param: id=2
+2019-07-30 13:32:21 INFO  UserDaoimpl:165 - Enter method getUserById() ID=2
+2019-07-30 13:32:21 DEBUG CoursesServlet:190 - Enter method getAssignedCourses() Param: idUser=2
+2019-07-30 13:32:21 DEBUG CoursesDaoImpl:191 - Enter method getCoursesIdListByUserIdFromTableCts().Param: idTeacher=2
+2019-07-30 13:32:21 INFO  CoursesDaoImpl:211 - Return idList with length=1
+2019-07-30 13:32:51 INFO  UserServlet:54 - Enter method doGet, ACTION: /profile
+2019-07-30 13:32:52 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/addCourses
+2019-07-30 13:32:56 INFO  UserServlet:31 - Enter doFilter() userName == admin
+2019-07-30 13:32:56 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:32:56 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:32:56 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:37:47 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:37:48 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:37:48 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:37:55 INFO  UserServlet:27 - Enter method doPost, ACTION: /login
+2019-07-30 13:37:55 DEBUG UserServlet:139 - Method checkUserByLogin: login:adm 
+2019-07-30 13:37:55 INFO  UserDaoimpl:49 - Enter method findUserByLoginAndPswd
+2019-07-30 13:37:55 INFO  UserDaoimpl:99 - Enter method getCurrentUserRole
+2019-07-30 13:37:55 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-30 13:37:55 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-30 13:37:55 INFO  UserDaoimpl:244 - Enter method getUserByLogin() Login=adm
+2019-07-30 13:37:55 INFO  UserDaoimpl:265 - User <adm> was found.
+2019-07-30 13:37:55 INFO  UserServlet:150 - Opened session, logged In.
+2019-07-30 13:37:55 INFO  UserServlet:31 - Enter doFilter() userName == adm
+2019-07-30 13:37:55 INFO  UserDaoimpl:219 - Enter method checkPermission() userName=adm
+2019-07-30 13:37:55 DEBUG CoursesServlet:30 - Enter method doGet(). Action:/coursesList
+2019-07-30 13:37:55 INFO  CoursesServlet:78 - Enter method listCourses()
+2019-07-30 13:37:55 INFO  CoursesDaoImpl:21 - Enter method listAllCourses
+2019-07-30 13:37:58 DEBUG CoursesServlet:57 - Enter method doPost(). Action:/assignCourses
+2019-07-30 13:48:22 INFO  UserServlet:54 - Enter method doGet, ACTION: /
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/error
+2019-07-30 13:48:27 INFO  UserServlet:54 - Enter method doGet, ACTION: /HNAP1/error
