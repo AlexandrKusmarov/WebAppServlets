@@ -1,5 +1,4 @@
 package servlets;
-
 import model.Courses;
 import model.Role;
 import model.User;
@@ -51,7 +50,6 @@ public class CoursesServlet extends HttpServlet {
         }
     }
 
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
         String action = req.getServletPath();
@@ -76,7 +74,6 @@ public class CoursesServlet extends HttpServlet {
                 break;
         }
     }
-
 
     private void listCourses(HttpServletRequest request, HttpServletResponse response) {
         logger.info("Enter method listCourses()");
